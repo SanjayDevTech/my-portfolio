@@ -24,5 +24,5 @@ export const BGLayer = styled.div`
 	left: 50px;
 	height: 320px;
 	width: 320px;
-	background-color: blue;
+	background-color: #4c8bfc;
 `;

@@ -5,8 +5,11 @@ import * as Styles from "./styles";
 function Contact() {
 	return (
 		<Styles.Wrapper id={"contact"}>
-			<Styles.Input placeholder={"name"} />
-			<Styles.Button>SEND</Styles.Button>
+			<Styles.ContentWrapper>
+				<Styles.Input placeholder={"name"} />
+				<Styles.Input placeholder={"email"} />
+				<Styles.Button>SEND</Styles.Button>
+			</Styles.ContentWrapper>
 		</Styles.Wrapper>
 	);
 }
