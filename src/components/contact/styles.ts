@@ -20,6 +20,7 @@ export const ContentWrapper = styled.div`
 	&:hover {
 		box-shadow: 2px 2px 8px #000;
 	}
+	background-color: ${(p) => p.theme.onSurface};
 `;
 
 export const Input = styled.input`
@@ -51,7 +52,7 @@ export const Button = styled.button`
 	}
 	&:hover {
 		color: #4c8bfc;
-		background: ${(p) => p.theme.surface};
+		background: #fff;
 		border: 2px solid #4c8bfc;
 	}
 `;

@@ -15,6 +15,8 @@ export const ProfileImage = styled.img`
 	top: 0;
 	left: 0;
 	height: 320px;
+	width: 320px;
+	background-color: #121212;
 `;
 
 export const BGLayer = styled.div`

@@ -13,13 +13,27 @@ export const Wrapper = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-	height: 120px;
+	height: 50px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	color: ${(p) => p.theme.text};
-	font-size: 16px;
+	font-size: 20px;
+	margin: 60px 0 0;
+`;
+
+export const Attribution = styled.div`
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: ${(p) => p.theme.text};
+	font-size: 14px;
+	& * {
+		margin: 2px;
+	}
 `;
 
 export const SocialMediaRow = styled.div`
@@ -39,6 +53,12 @@ export const SocialIconWrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 	background-color: ${(p) => p.theme.onSurface};
+	cursor: pointer;
+`;
+
+export const Link = styled.a`
+	display: block;
+	height: 100%;
 `;
 
 export const SocialIcon = styled.img`

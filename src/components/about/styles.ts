@@ -23,8 +23,23 @@ export const TitleText = styled.div`
 	width: 75%;
 `;
 
-export const SubTitleText = styled.div`
-	font-size: 35px;
+export const SubTitleText = styled.div<{
+	margin?: string;
+}>`
+	${(p) =>
+		p.margin &&
+		`
+		margin: ${p.margin};
+	`}
+	font-size: 30px;
 	width: 75%;
 	color: ${(p) => p.theme.text};
+`;
+
+export const TextListItem = styled.div`
+	color: ${(p) => p.theme.text};
+	&:before {
+		content: "•";
+		margin-right: 10px;
+	}
 `;
