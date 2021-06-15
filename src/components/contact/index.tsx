@@ -21,10 +21,13 @@ function Contact() {
 		) {
 			setLoading(true);
 			try {
-				const { data } = await axios.post("http://localhost:5500/send", {
-					name,
-					email,
-				});
+				const { data } = await axios.post(
+					"https://node-send-mail.azurewebsites.net/send",
+					{
+						name,
+						email,
+					}
+				);
 				if (data?.status) {
 					setMsg("I will contact u soon");
 				}
