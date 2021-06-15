@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://sanjaydevtech.github.io/",
   "dependencies": {
+    "@sendgrid/client": "^7.4.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -11,6 +12,8 @@
     "@types/node": "^15.6.1",
     "@types/react": "^16.9.49",
     "@types/react-dom": "^17.0.5",
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",

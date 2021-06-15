@@ -36,23 +36,29 @@ export const Input = styled.input`
 	}
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{
+	$loading?: boolean;
+}>`
 	margin: 10px;
-	cursor: pointer;
+	cursor: ${(p) => (p.$loading ? `wait` : `pointer`)};
 	padding: 10px 30px;
 	color: #fff;
-	background-color: #4c8bfc;
+	background-color: ${(p) => (p.$loading ? `#3DDC84` : `#4c8bfc`)};
 	border-radius: 22px;
 	font-size: 20px;
 	transition: all 0.1s;
-	box-shadow: 0px;
-	border: 2px solid #4c8bfc;
+	box-shadow: 0 0 0;
+	border: 2px solid ${(p) => (p.$loading ? `#3DDC84` : `#4c8bfc`)};
 	&:active {
 		box-shadow: 0 1px 5px #000000;
 	}
+	${(p) =>
+		!p.$loading &&
+		`
 	&:hover {
 		color: #4c8bfc;
 		background: #fff;
 		border: 2px solid #4c8bfc;
 	}
+	`}
 `;
