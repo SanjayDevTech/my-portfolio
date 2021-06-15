@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3c1df3cf.chunk.css",
+    "main.js": "/static/js/main.2245c56f.chunk.js",
+    "main.js.map": "/static/js/main.2245c56f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ca7e7c54.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ca7e7c54.js.map",
+    "static/js/2.0b741d82.chunk.js": "/static/js/2.0b741d82.chunk.js",
+    "static/js/2.0b741d82.chunk.js.map": "/static/js/2.0b741d82.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e23b381c389e0d58fd8d107acae2aff4.js": "/precache-manifest.e23b381c389e0d58fd8d107acae2aff4.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3c1df3cf.chunk.css.map": "/static/css/main.3c1df3cf.chunk.css.map",
+    "static/js/2.0b741d82.chunk.js.LICENSE.txt": "/static/js/2.0b741d82.chunk.js.LICENSE.txt",
+    "static/media/brand.png": "/static/media/brand.e72a956e.png",
+    "static/media/dark-icon.svg": "/static/media/dark-icon.8838b09a.svg",
+    "static/media/github.svg": "/static/media/github.db0721b1.svg",
+    "static/media/gmail.svg": "/static/media/gmail.c4cb17e1.svg",
+    "static/media/light-icon.svg": "/static/media/light-icon.264cf335.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.ab46037f.svg",
+    "static/media/twitter.svg": "/static/media/twitter.4f41a984.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca7e7c54.js",
+    "static/js/2.0b741d82.chunk.js",
+    "static/css/main.3c1df3cf.chunk.css",
+    "static/js/main.2245c56f.chunk.js"
+  ]
+}
