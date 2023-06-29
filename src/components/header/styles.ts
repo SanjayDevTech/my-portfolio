@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -27,7 +28,7 @@ export const Grow = styled.div`
 	flex-grow: 1;
 `;
 
-export const ActionText = styled.a`
+export const ActionText = styled(Link)`
 	font-size: 22px;
 	margin: 0 40px 0 0;
 	padding: 5px;
