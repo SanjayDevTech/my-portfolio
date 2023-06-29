@@ -2,10 +2,10 @@ import React from "react";
 
 import * as Styles from "./styles";
 
-import linkedinIcon from "../../assets/linkedin.svg";
-import twitterIcon from "../../assets/twitter.svg";
-import githubIcon from "../../assets/github.svg";
-import gmailIcon from "../../assets/gmail.svg";
+import linkedinIcon from "#assets/linkedin.svg";
+import twitterIcon from "#assets/twitter.svg";
+import githubIcon from "#assets/github.svg";
+import gmailIcon from "#assets/gmail.svg";
 
 function Footer() {
 	const year = new Date().getFullYear();

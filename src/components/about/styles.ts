@@ -24,12 +24,12 @@ export const TitleText = styled.div`
 `;
 
 export const SubTitleText = styled.div<{
-	margin?: string;
+	$margin?: string;
 }>`
 	${(p) =>
-		p.margin &&
+		p.$margin &&
 		`
-		margin: ${p.margin};
+		margin: ${p.$margin};
 	`}
 	font-size: 30px;
 	width: 75%;
