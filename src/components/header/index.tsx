@@ -1,32 +1,19 @@
-import React, { useContext } from "react";
-
-import AppContext from "../../context";
-
 import * as Styles from "./styles";
 
-import brandImage from "../../assets/brand.png";
-import lightIcon from "../../assets/light-icon.svg";
-import darkIcon from "../../assets/dark-icon.svg";
+import brandImage from "#assets/brand.png";
+import { useLocation } from "react-router-dom";
 
 function Header() {
-	const { darkMode, darkModeHandler } = useContext(AppContext);
 
-	const toggleDarkMode = () => {
-		darkModeHandler(!darkMode);
-	};
+	const location = useLocation();
 
 	return (
 		<Styles.Wrapper>
 			<Styles.BrandImage src={brandImage} alt={"Brand"} />
 			<Styles.Grow />
-			<Styles.ActionText href={"#about"}>about</Styles.ActionText>
-			<Styles.ActionText href={"#featured"}>featured</Styles.ActionText>
-			<Styles.ActionText href={"#contact"}>contact</Styles.ActionText>
-			<Styles.ActionIcon
-				src={darkMode ? lightIcon : darkIcon}
-				alt={"Toggle dark mode"}
-				onClick={toggleDarkMode}
-			/>
+			<Styles.ActionText href={"/"}>Home</Styles.ActionText>
+			<Styles.ActionText href={"/about"}>About</Styles.ActionText>
+			<Styles.ActionText href={"/projects"}>Projects</Styles.ActionText>
 		</Styles.Wrapper>
 	);
 }
