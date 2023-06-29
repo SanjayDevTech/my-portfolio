@@ -11,4 +11,8 @@ const colors = {
 
 export const colorKeys = Object.keys(colors) as (keyof typeof colors)[];
 
+export function getColor(color: keyof typeof colors) {
+  return colors[color];
+}
+
 export default colors;

@@ -4,16 +4,13 @@ import Footer from "#components/footer";
 import { Outlet } from "react-router-dom";
 
 export default function Layout() {
-
   return (
-    <>
-      <Header />
       <GlobalStyles.Scrollable>
+        <Header />
         <GlobalStyles.Main>
-            <Outlet />
+          <Outlet />
         </GlobalStyles.Main>
         <Footer />
       </GlobalStyles.Scrollable>
-    </>
   );
 }

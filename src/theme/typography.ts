@@ -2,12 +2,12 @@ import { FontVariant, TypographyVariant } from "./types";
 
 const smallTypography: TypographyVariant = {
   desktop: {
-    fontSize: 30,
+    fontSize: 25,
     fontStyle: "normal",
     fontWeight: 500,
   },
   mobile: {
-    fontSize: 30,
+    fontSize: 20,
     fontStyle: "normal",
     fontWeight: 500,
   },

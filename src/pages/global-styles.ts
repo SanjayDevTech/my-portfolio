@@ -9,6 +9,6 @@ export const Main = styled.div`
 export const Scrollable = styled.div`
   display: flex;
   flex-direction: column;
-  height: calc(100% - 76px);
+  height: 100vh;
   overflow-y: auto;
 `;

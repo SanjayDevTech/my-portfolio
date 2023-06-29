@@ -10,12 +10,17 @@ function Header() {
   return (
     <Styles.Wrapper>
       <Styles.BrandImage src={brandImage} alt={"Brand"} />
+      <Text variant="small" color="primary2">Sanjay</Text>
       <Styles.Grow />
-      <Text onClick={() => navigate("/")} variant="small" color="primary1">
+      <Styles.ActionText onClick={() => navigate("/")} variant="small" color="primary2">
         Home
-      </Text>
-      <Link to={"/about"}>About</Link>
-      <Link to={"/projects"}>Projects</Link>
+      </Styles.ActionText>
+      <Styles.ActionText onClick={() => navigate("/about")} variant="small" color="primary2">
+        About
+      </Styles.ActionText>
+      <Styles.ActionText onClick={() => navigate("/projects")} variant="small" color="primary2">
+        Projects
+      </Styles.ActionText>
     </Styles.Wrapper>
   );
 }

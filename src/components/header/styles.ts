@@ -1,18 +1,19 @@
-import { Link } from "react-router-dom";
+import Text from "#components/text";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	height: 60px;
+	height: 80px;
 	padding: 8px;
-	background-color: ${(p) => p.theme.surface};
+	background-color: #fff;
 `;
 
 export const BrandImage = styled.img`
-	height: 80%;
-	margin: 0 10px;
+	height: 64px;
+	width: 64px;
+	margin: 0 18px 0 10px;
 `;
 
 export const ActionIcon = styled.img`
@@ -28,13 +29,11 @@ export const Grow = styled.div`
 	flex-grow: 1;
 `;
 
-export const ActionText = styled(Link)`
-	font-size: 22px;
-	margin: 0 40px 0 0;
+export const ActionText = styled(Text)`
+	margin: 0 35px 0 0;
 	padding: 5px;
 	cursor: pointer;
 	position: relative;
-	color: ${(p) => p.theme.text};
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
@@ -47,14 +46,15 @@ export const ActionText = styled(Link)`
 		bottom: 0;
 		left: 0;
 		height: 2px;
-		background-color: ${(p) => p.theme.text};
+		background-color: ${(p) => p.theme.primaryDark};
 		width: 100%;
+		border-radius: 10px;
 		visibility: hidden;
 		transform: scaleX(0);
 		transition: all 0.3s ease-in-out;
 	}
 	&:hover:after {
 		visibility: visible;
-		transform: scaleX(1);
+		transform: scaleX(0.5);
 	}
 `;
