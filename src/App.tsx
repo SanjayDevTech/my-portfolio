@@ -1,12 +1,18 @@
-import { ThemeProvider } from "styled-components";
+import { StyleSheetManager, ThemeProvider } from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
+
+import { createTheme } from "#theme";
 
 import AppRoutes from "./AppRoutes";
-import { createTheme } from "#theme";
+
+const theme = createTheme();
 
 export default function App() {
   return (
-    <ThemeProvider theme={createTheme()}>
-      <AppRoutes />
-    </ThemeProvider>
+    <StyleSheetManager shouldForwardProp={isPropValid}>
+      <ThemeProvider theme={theme}>
+        <AppRoutes />
+      </ThemeProvider>
+    </StyleSheetManager>
   );
 }

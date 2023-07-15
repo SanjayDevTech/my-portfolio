@@ -1,4 +1,4 @@
-import Text from "#components/text";
+import Text, { SmallText } from "#components/text";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -29,7 +29,7 @@ export const Grow = styled.div`
 	flex-grow: 1;
 `;
 
-export const ActionText = styled(Text)`
+export const ActionText = styled(SmallText)`
 	margin: 0 35px 0 0;
 	padding: 5px;
 	cursor: pointer;
@@ -46,7 +46,7 @@ export const ActionText = styled(Text)`
 		bottom: 0;
 		left: 0;
 		height: 2px;
-		background-color: ${(p) => p.theme.primaryDark};
+		background-color: ${(p) => p.theme.colors.primaryDark};
 		width: 100%;
 		border-radius: 10px;
 		visibility: hidden;

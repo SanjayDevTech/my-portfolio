@@ -10,15 +10,15 @@ function Header() {
   return (
     <Styles.Wrapper>
       <Styles.BrandImage src={brandImage} alt={"Brand"} />
-      <Text variant="small" color="primary2">Sanjay</Text>
+      <Text variant="small" color="primaryDark">Sanjay</Text>
       <Styles.Grow />
-      <Styles.ActionText onClick={() => navigate("/")} variant="small" color="primary2">
+      <Styles.ActionText onClick={() => navigate("/")} color="primaryDark">
         Home
       </Styles.ActionText>
-      <Styles.ActionText onClick={() => navigate("/about")} variant="small" color="primary2">
+      <Styles.ActionText onClick={() => navigate("/about")} color="primaryDark">
         About
       </Styles.ActionText>
-      <Styles.ActionText onClick={() => navigate("/projects")} variant="small" color="primary2">
+      <Styles.ActionText onClick={() => navigate("/projects")} color="primaryDark">
         Projects
       </Styles.ActionText>
     </Styles.Wrapper>

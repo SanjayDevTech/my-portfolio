@@ -1,7 +1,9 @@
-import * as GlobalStyles from "./global-styles";
+import { Outlet } from "react-router-dom";
+
 import Header from "#components/header";
 import Footer from "#components/footer";
-import { Outlet } from "react-router-dom";
+
+import * as GlobalStyles from "./global-styles";
 
 export default function Layout() {
   return (

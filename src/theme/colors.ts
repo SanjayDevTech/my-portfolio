@@ -1,18 +1,20 @@
-const colors = {
-  primary1: "#283BDA",
-  primary2: "#221D2C",
-  secondary1: "#E36708",
-  secondary2: "#B8481C",
-  secondary3: "#F08F30",
-  tertiary1: "#CEB6B5",
-  tertiary2: "#B0A9AA",
-  tertiary3: "#F8F3F3",
+const Colors = {
+  primary: "#283BDA",
+  primaryDark: "#221D2C",
+  secondary: "#E36708",
+  secondaryDark: "#B8481C",
+  secondaryLight: "#F08F30",
+  tertiary: "#CEB6B5",
+  tertiaryDark: "#B0A9AA",
+  text: "#F8F3F3",
+  white: "#FFF",
+  black: "#000",
 };
 
-export const colorKeys = Object.keys(colors) as (keyof typeof colors)[];
+export const colorKeys = Object.keys(Colors) as (keyof typeof Colors)[];
 
-export function getColor(color: keyof typeof colors) {
-  return colors[color];
+export function getColor(color: keyof typeof Colors) {
+  return Colors[color];
 }
 
-export default colors;
+export default Colors;
