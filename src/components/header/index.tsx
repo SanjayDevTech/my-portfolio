@@ -2,7 +2,8 @@ import * as Styles from "./styles";
 
 import brandImage from "#assets/brand.png";
 import Text from "#components/text";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import GithubAccount from "#components/github-account";
 
 function Header() {
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ function Header() {
       <Styles.ActionText onClick={() => navigate("/projects")} color="primaryDark">
         Projects
       </Styles.ActionText>
+      <GithubAccount />
     </Styles.Wrapper>
   );
 }
