@@ -15,6 +15,10 @@ export const Wrapper = styled.button`
     &:hover {
         background: ${(p) => p.theme.colors.primaryDark}dd;
     }
+
+    @media only screen and (max-width: 576px) {
+        margin: 20px 0;
+    }
 `;
 
 export const Circle = styled.div`

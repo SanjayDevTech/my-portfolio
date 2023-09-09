@@ -8,4 +8,5 @@ export const StyledHamburger = styled.button`
     align-items: center;
     background-color: transparent;
     cursor: pointer;
+    margin: 0 14px;
 `;
