@@ -15,11 +15,13 @@ function Footer() {
 		<SmallText color="text">Copyright © {year} {about.title}</SmallText>
 		<Styles.SocialMediaRow>
 			{links.map((link) => (
-				<Styles.SocialIconWrapper>
-					<Styles.SocialIcon
-						key={link.name}
-						src={link.icon}
-					/>
+				<Styles.SocialIconWrapper key={link.name}>
+					<Styles.Link target="_blank" href={link.url}>
+						<Styles.SocialIcon
+							src={link.icon}
+							alt={link.name}
+						/>
+					</Styles.Link>
 				</Styles.SocialIconWrapper>
 			))}
 		</Styles.SocialMediaRow></>;

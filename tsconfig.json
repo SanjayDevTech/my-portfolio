@@ -23,6 +23,7 @@
       "#theme": ["./src/theme"],
       "#theme/*": ["./src/theme/*"],
       "#config/*": ["./src/config/*"],
+      "#utils/*": ["./src/utils/*"],
     }
   },
   "include": ["src"],
