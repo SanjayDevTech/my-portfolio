@@ -7,10 +7,11 @@ import { useMediaQuery } from "usehooks-ts";
 import { useEffect, useState } from "react";
 import Hamburger from "#components/hamburger";
 import pagesConfig from "#config/pages";
+import { useMobile } from "#utils";
 
 function Header() {
   const navigate = useNavigate();
-  const isMobile = useMediaQuery("(max-width: 576px)");
+  const isMobile = useMobile();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const pages = pagesConfig;

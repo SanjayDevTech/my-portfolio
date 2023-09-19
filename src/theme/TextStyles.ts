@@ -7,7 +7,7 @@ const FontWeight = {
 };
 
 const SmallTextStyle: TextStyle = {
-  fontSize: 25,
+  fontSize: 20,
   fontWeight: FontWeight.regular,
   fontStyle: "normal",
 };
@@ -25,7 +25,7 @@ const LargeTextStyle: TextStyle = {
 };
 
 const SmallMiniTextStyle: TextStyle = {
-  fontSize: 20,
+  fontSize: 18,
   fontWeight: FontWeight.regular,
   fontStyle: "normal",
 };
