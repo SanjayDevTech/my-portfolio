@@ -3,11 +3,10 @@ import brandImage from "#assets/brand.png";
 import Text from "#components/text";
 import { useNavigate } from "react-router-dom";
 import GithubAccount from "#components/github-account";
-import { useMediaQuery } from "usehooks-ts";
 import { useEffect, useState } from "react";
 import Hamburger from "#components/hamburger";
 import pagesConfig from "#config/pages";
-import { useMobile } from "#utils";
+import useMobile from "#hooks/useMobile";
 
 function Header() {
   const navigate = useNavigate();

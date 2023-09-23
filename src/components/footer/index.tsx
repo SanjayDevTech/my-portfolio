@@ -5,7 +5,7 @@ import * as Styles from "./styles";
 import links from "#config/links";
 import { SmallText } from "#components/text";
 import about from "#config/about";
-import { useMobile } from "#utils";
+import useMobile from "#hooks/useMobile";
 
 function Footer() {
 	const year = useMemo(() => new Date().getFullYear(), []);
