@@ -1,45 +1,22 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-	padding: 50px 0 30px;
-	min-height: 200px;
+	padding: 0 100px;
+	height: clamp(600px, 681px, calc(100vh - 120px));
+	background-color: ${(p) => p.theme.colors.primaryDark};
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: space-between;
+`;
+
+export const MobileWrapper = styled(Wrapper)`
+	padding: 0 20px;
+	flex-direction: column;
+	justify-content: center;
+	row-gap: 35px;
 `;
 
 export const ContentWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 50%;
-	padding: 10px;
-	align-items: center;
-`;
-
-export const TitleText = styled.div`
-	font-weight: bold;
-	font-size: 50px;
-	color: ${(p) => p.theme.text};
-	width: 75%;
-`;
-
-export const SubTitleText = styled.div<{
-	$margin?: string;
-}>`
-	${(p) =>
-		p.$margin &&
-		`
-		margin: ${p.$margin};
-	`}
-	font-size: 30px;
-	width: 75%;
-	color: ${(p) => p.theme.text};
-`;
-
-export const TextListItem = styled.div`
-	color: ${(p) => p.theme.text};
-	&:before {
-		content: "•";
-		margin-right: 10px;
-	}
 `;

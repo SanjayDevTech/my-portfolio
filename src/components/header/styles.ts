@@ -6,14 +6,14 @@ export const Wrapper = styled.div`
 	flex-direction: row;
 	align-items: center;
 	height: 108px;
-	padding: 8px;
+	padding: 0 25px;
 	background-color: #fff;
 `;
 
 export const BrandImage = styled.img`
 	height: 64px;
 	width: 64px;
-	margin: 0 18px 0 10px;
+	margin: 0 18px 0 0;
 `;
 
 export const ActionIcon = styled.img`

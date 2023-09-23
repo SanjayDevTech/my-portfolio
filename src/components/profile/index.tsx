@@ -1,16 +1,14 @@
-import React from "react";
-
 import * as Styles from "./styles";
+import profile from "#config/profile";
+import useMobile from "#hooks/useMobile";
 
-const IMAGE_URL =
-	"https://en.gravatar.com/userimage/138806607/d6fbfb4048a09eb0f873c8a0cc6b9bfc.png?size=500";
+const IMAGE_URL = `https://github.com/${profile.githubUserName}.png`;
 
 function Profile() {
+	const isMobile = useMobile();
+	const size = isMobile ? 254 : 442;
 	return (
-		<Styles.Wrapper>
-			<Styles.BGLayer />
-			<Styles.ProfileImage src={IMAGE_URL} alt={"Sanjay"} />
-		</Styles.Wrapper>
+		<Styles.ProfileImage $size={size} src={IMAGE_URL} alt={profile.githubUserName} />
 	);
 }
 
