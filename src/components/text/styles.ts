@@ -6,6 +6,7 @@ export const Text = styled.span<{
     $fontSize: SubVariant<FontSizeNumber>;
     $fontWeight: SubVariant<FontWeightNumber>;
     $fontStyle: SubVariant<FontStyleString>;
+    $highlightColor?: string;
 }>`
     display: inline-block;
     color: ${p => p.$color};
@@ -16,5 +17,8 @@ export const Text = styled.span<{
         font-size: ${p => p.$fontSize.mini}px;
         font-weight: ${p => p.$fontWeight.mini};
         font-style: ${p => p.$fontStyle.mini};
+    }
+    & > span {
+        color: ${p => p.$highlightColor};
     }
 `;

@@ -1,12 +1,12 @@
-import About from "#components/about";
+import BioSection from "#components/bio-section";
 import Contact from "#components/contact";
-import Featured from "#components/featured";
+import IntroductionSection from "#components/introduction-section";
 
 export default function HomePage() {
   return (
     <>
-      <About />
-      <Featured />
+      <BioSection />
+      <IntroductionSection />
       <Contact />
     </>
   );

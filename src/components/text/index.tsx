@@ -4,7 +4,7 @@ import { getFontSize, getFontStyle, getFontWeight, TextVariants } from "#theme/T
 import { getColor } from "#theme/Colors";
 
 export default function Text(props: TextProps) {
-  const { variant, color, ...childProps } = props;
+  const { variant, color, highlightColor, ...childProps } = props;
 
   return (
     <Styles.Text
@@ -12,6 +12,7 @@ export default function Text(props: TextProps) {
       $fontWeight={getFontWeight(variant)}
       $fontSize={getFontSize(variant)}
       $color={getColor(color)}
+      $highlightColor={getColor(highlightColor ?? "text")}
       {...childProps}
     />
   );
