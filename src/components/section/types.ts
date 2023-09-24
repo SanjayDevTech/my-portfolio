@@ -1,4 +1,6 @@
+import Colors from "#theme/Colors";
+
 export default interface SectionProps {
     children: React.ReactNode;
-    backgroundColor: string;
+    backgroundColor: keyof typeof Colors;
 }

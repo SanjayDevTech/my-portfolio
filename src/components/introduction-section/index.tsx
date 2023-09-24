@@ -2,18 +2,16 @@ import Section from "#components/section";
 import { SmallText } from "#components/text";
 import useMobile from "#hooks/useMobile";
 import devCoding from "#assets/dev-coding.svg";
-import Colors from "#theme/Colors";
-
-import * as Styles from "./styles";
 import Spacer from "#components/spacer";
+import SectionImage from "#components/section-image";
 
 function IntroductionSection() {
     const isMobile = useMobile();
     return (
-        <Section backgroundColor={Colors.white}>
+        <Section backgroundColor="white">
             {!isMobile && (
                 <>
-                    <Styles.ImageWrapper src={devCoding} alt="dev-coding" />
+                    <SectionImage src={devCoding} alt="dev-coding" />
                     <Spacer width="60px" />
                     <SmallText style={{
                         width: "60%"

@@ -17,4 +17,12 @@ export function getColor(color: keyof typeof Colors) {
   return Colors[color];
 }
 
+export function getTextColor(color: keyof typeof Colors) {
+  if (color.startsWith("primary") || color.startsWith("secondary")) {
+    return Colors.white;
+  }
+
+  return Colors.primaryDark;
+}
+
 export default Colors;

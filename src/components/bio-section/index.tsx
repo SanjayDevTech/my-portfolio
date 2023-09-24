@@ -1,7 +1,6 @@
 import Section from "#components/section";
 import { LargeText, MediumText } from "#components/text";
 import useMobile from "#hooks/useMobile";
-import Colors from "#theme/Colors";
 import Profile from "../profile";
 
 import * as Styles from "./styles";
@@ -27,7 +26,7 @@ function BioSection() {
 		</>
 	);
 	return (
-		<Section backgroundColor={Colors.primaryDark}>
+		<Section backgroundColor="primaryDark">
 			{CONTENT}
 		</Section>
 	);

@@ -32,3 +32,8 @@ export function MediumText(props: Omit<TextProps, "variant">) {
   const { color, ...childProps } = props;
   return <Text variant="medium" color={color} {...childProps}  />;
 }
+
+export function ButtonText(props: Omit<TextProps, "variant">) {
+  const { color, ...childProps } = props;
+  return <Text variant="button" color={color} {...childProps}  />;
+}

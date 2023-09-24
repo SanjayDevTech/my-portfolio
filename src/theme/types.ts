@@ -17,4 +17,5 @@ export interface Variant<T extends TextStyle | FontSizeNumber | FontStyleString 
   small: SubVariant<T>;
   medium: SubVariant<T>;
   large: SubVariant<T>;
+  button: SubVariant<T>;
 }
