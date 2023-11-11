@@ -1,7 +1,7 @@
 import TextProps from "./types";
 import * as Styles from "./styles";
 import { getFontSize, getFontStyle, getFontWeight, TextVariants } from "#theme/TextStyles";
-import { getColor } from "#theme/Colors";
+import { getColor } from "#theme/colors";
 
 export default function Text(props: TextProps) {
   const { variant, color, highlightColor, ...childProps } = props;

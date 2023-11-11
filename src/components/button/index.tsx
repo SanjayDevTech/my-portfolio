@@ -1,5 +1,5 @@
 import { ButtonText } from "#components/text";
-import { getColor, getTextColor } from "#theme/Colors";
+import { getColor, getTextColor } from "#theme/colors";
 import * as Styles from "./styles";
 import ButtonProps from "./types";
 

@@ -1,5 +1,5 @@
 import useMobile from "#hooks/useMobile";
-import { getColor } from "#theme/Colors";
+import { getColor } from "#theme/colors";
 import * as Styles from "./styles";
 import SectionProps from "./types";
 

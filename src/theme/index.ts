@@ -1,4 +1,4 @@
-import Colors from "./Colors";
+import Colors from "./colors";
 import TextStyles from "./TextStyles";
 
 export const createTheme = () => ({
