@@ -4,7 +4,7 @@ import * as Styles from "./styles";
 
 import { footerLinks } from "#config/links";
 import { SmallText } from "#components/text";
-import about from "#config/about";
+import about from "../../../about.json";
 import useMobile from "#hooks/useMobile";
 
 function Footer() {
