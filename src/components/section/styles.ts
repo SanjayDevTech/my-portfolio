@@ -9,6 +9,7 @@ export const Wrapper = styled.div<{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
 `;
 
 export const MobileWrapper = styled(Wrapper)`
@@ -16,4 +17,5 @@ export const MobileWrapper = styled(Wrapper)`
 	flex-direction: column;
 	justify-content: center;
 	row-gap: 35px;
+	position: relative;
 `;

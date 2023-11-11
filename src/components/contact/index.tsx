@@ -1,64 +1,31 @@
-import { useRef, useState } from "react";
-import axios from "axios";
-
 import * as Styles from "./styles";
+import Section from "#components/section";
+import { MediumText } from "#components/text";
+import useMobile from "#hooks/useMobile";
+import { contactLinks } from "#config/links";
 
 function Contact() {
-	const [loading, setLoading] = useState(false);
-	const nameRef = useRef<HTMLInputElement>(null);
-	const emailRef = useRef<HTMLInputElement>(null);
-	const [msg, setMsg] = useState("");
+    const isMobile = useMobile();
 
-	const sendMail = async () => {
-		const name = nameRef.current?.value;
-		const email = emailRef.current?.value;
-		if (
-			name?.trim() &&
-			name?.trim().length > 2 &&
-			/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
-				email || ""
-			)
-		) {
-			setLoading(true);
-			try {
-				const { data } = await axios.post(
-					"https://node-send-mail.azurewebsites.net/send",
-					{
-						name,
-						email,
-					}
-				);
-				if (data?.status) {
-					setMsg("I will contact u soon");
-				}
-			} catch (e) {
-				console.log(e);
-			} finally {
-				setLoading(false);
-				const nameInput = nameRef.current;
-				const emailInput = emailRef.current;
-				if (nameInput && emailInput) {
-					nameInput.value = "";
-					emailInput.value = "";
-				}
-			}
-		}
-	};
-
-	return (
-		<Styles.Wrapper id={"contact"}>
-			<Styles.ContentWrapper>
-				<Styles.Input ref={nameRef} placeholder={"name"} />
-				<Styles.Input ref={emailRef} placeholder={"email"} />
-				<Styles.Button
-					onClick={sendMail}
-					disabled={loading || !!msg}
-					$loading={loading}>
-					{loading ? "LOADING" : msg || "SEND"}
-				</Styles.Button>
-			</Styles.ContentWrapper>
-		</Styles.Wrapper>
-	);
+    return (
+        <Section backgroundColor={"white"}>
+            <Styles.ContentWrapper>
+                <MediumText style={{
+                    position: "absolute",
+                    top: 30
+                }} color="primaryDark">Connect with me</MediumText>
+                <Styles.ContactRowWrapper>
+                    {contactLinks.map((link) => (
+                        <Styles.SocialIconWrapper key={link.name}>
+                            <Styles.Link target="_blank" href={link.url}>
+                                <Styles.SocialIcon src={link.icon} alt={link.name} />
+                            </Styles.Link>
+                        </Styles.SocialIconWrapper>
+                    ))}
+                </Styles.ContactRowWrapper>
+            </Styles.ContentWrapper>
+        </Section>
+    );
 }
 
 export default Contact;

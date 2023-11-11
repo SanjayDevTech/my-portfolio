@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 import * as Styles from "./styles";
 
-import links from "#config/links";
+import { footerLinks } from "#config/links";
 import { SmallText } from "#components/text";
 import about from "#config/about";
 import useMobile from "#hooks/useMobile";
@@ -14,7 +14,7 @@ function Footer() {
 	const CONTENT = <><SmallText color="text">Designed & Developed by {about.title}</SmallText>
 		<SmallText color="text">Copyright © {year} {about.title}</SmallText>
 		<Styles.SocialMediaRow>
-			{links.map((link) => (
+			{footerLinks.map((link) => (
 				<Styles.SocialIconWrapper key={link.name}>
 					<Styles.Link target="_blank" href={link.url}>
 						<Styles.SocialIcon

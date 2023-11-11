@@ -7,12 +7,12 @@ import * as GlobalStyles from "./global-styles";
 
 export default function Layout() {
   return (
-      <GlobalStyles.Scrollable>
-        <Header />
-        <GlobalStyles.Main>
-          <Outlet />
-        </GlobalStyles.Main>
-        <Footer />
-      </GlobalStyles.Scrollable>
+    <GlobalStyles.Scrollable>
+      <Header />
+      <GlobalStyles.Main>
+        <Outlet />
+      </GlobalStyles.Main>
+      <Footer />
+    </GlobalStyles.Scrollable>
   );
 }
