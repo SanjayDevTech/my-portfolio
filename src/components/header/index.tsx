@@ -1,34 +1,52 @@
-import React, { useContext } from "react";
-
-import AppContext from "../../context";
-
 import * as Styles from "./styles";
-
-import brandImage from "../../assets/brand.png";
-import lightIcon from "../../assets/light-icon.svg";
-import darkIcon from "../../assets/dark-icon.svg";
+import brandImage from "#assets/brand.png";
+import Text from "#components/text";
+import { useNavigate } from "react-router-dom";
+import GithubAccount from "#components/github-account";
+import { useEffect, useState } from "react";
+import Hamburger from "#components/hamburger";
+import pagesConfig from "#config/pages";
+import useMobile from "#hooks/useMobile";
 
 function Header() {
-	const { darkMode, darkModeHandler } = useContext(AppContext);
+  const navigate = useNavigate();
+  const isMobile = useMobile();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-	const toggleDarkMode = () => {
-		darkModeHandler(!darkMode);
-	};
+  const pages = pagesConfig;
 
-	return (
-		<Styles.Wrapper>
-			<Styles.BrandImage src={brandImage} alt={"Brand"} />
-			<Styles.Grow />
-			<Styles.ActionText href={"#about"}>about</Styles.ActionText>
-			<Styles.ActionText href={"#featured"}>featured</Styles.ActionText>
-			<Styles.ActionText href={"#contact"}>contact</Styles.ActionText>
-			<Styles.ActionIcon
-				src={darkMode ? lightIcon : darkIcon}
-				alt={"Toggle dark mode"}
-				onClick={toggleDarkMode}
-			/>
-		</Styles.Wrapper>
-	);
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [isMobile]);
+
+  return (
+    <Styles.Container>
+      <Styles.Wrapper>
+        <Styles.BrandImage src={brandImage} alt={"Brand"} />
+        <Text variant="small" color="primaryDark">Sanjay</Text>
+        <Styles.Grow />
+        {isMobile
+          ? (<Hamburger open={menuOpen} setOpen={setMenuOpen} />)
+          : (<>
+            {pages.map((page) => (
+              <Styles.ActionText key={page.path} onClick={() => navigate(page.path)} color="primaryDark">
+                {page.title}
+              </Styles.ActionText>
+            ))}
+            <GithubAccount /></>)}
+      </Styles.Wrapper>
+      {isMobile && menuOpen && (
+        <Styles.MobileMenu>
+          {pages.map((page) => (
+            <Styles.MobileMenuItem key={page.path} onClick={() => navigate(page.path)} color="primaryDark">
+              {page.title}
+            </Styles.MobileMenuItem>
+          ))}
+          <GithubAccount />
+        </Styles.MobileMenu>
+      )}
+    </Styles.Container>
+  );
 }
 
 export default Header;

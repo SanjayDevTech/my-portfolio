@@ -1,5 +1,3 @@
-import React from "react";
-
 import { ICardProps } from "./types";
 
 import * as Styles from "./styles";
