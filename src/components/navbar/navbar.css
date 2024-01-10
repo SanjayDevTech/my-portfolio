@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 
-.--navbar-list {
+.--navbar-nav {
     display: flex;
     flex-direction: column;
     margin: auto 0;
@@ -28,9 +28,10 @@
 
 .--navbar-item {
     cursor: pointer;
-    margin: 2px 4px;
+    margin: 4px;
     padding: 10px;
     color: var(--color-primary-dark-text);
+    list-style: none;
     border-radius: 6px;
     transition: .3s;
 }

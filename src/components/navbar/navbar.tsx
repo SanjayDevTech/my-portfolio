@@ -8,23 +8,25 @@ export default function Navbar() {
     return (
         <header className="--navbar-header">
             <p className="--navbar-brand" title="Sanjay S">Sanjay S</p>
-            <nav className="--navbar-list">
-                {navItems.map(item => (
-                    <ul
-                        key={item.id}
-                        onClick={() => {
-                            const element = document.getElementById(item.id);
-                            if (element) {
-                                element.scrollIntoView({
-                                    behavior: "smooth"
-                                });
-                            }
-                        }}
-                        className={clsx("--navbar-item", {
-                            "--navbar-item-active": section === item.id
-                        })}
-                        title={item.title}>{item.label}</ul>
-                ))}
+            <nav className="--navbar-nav">
+                <ul className="--navbar-list">
+                    {navItems.map(item => (
+                        <li
+                            key={item.id}
+                            onClick={() => {
+                                const element = document.getElementById(item.id);
+                                if (element) {
+                                    element.scrollIntoView({
+                                        behavior: "smooth"
+                                    });
+                                }
+                            }}
+                            className={clsx("--navbar-item", {
+                                "--navbar-item-active": section === item.id
+                            })}
+                            title={item.title}>{item.label}</li>
+                    ))}
+                </ul>
             </nav>
             <p className="--navbar-footer">
                 Created by me on<br /><a className="--navbar-footer-link" target="_blank" href="https://github.com/SanjayDevTech/Portfolio">GitHub</a>
