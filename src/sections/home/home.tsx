@@ -22,7 +22,7 @@ export default function Home() {
                 }} className="--home-section-profile-headline">{headlines[headlineIndex]}</p>
             </div>
             <div className="--home-section-profile-picture-container">
-                <img loading="lazy" className="--home-section-profile-picture" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+                <img loading="lazy" className="--home-section-profile-picture" src="https://i.ibb.co/1vphYyB/photo-2024-01-11-20-12-12.jpg" alt="Sanjay Picture" />
             </div>
         </Section>
     );
