@@ -1,13 +1,9 @@
-import { useRef } from "react";
-import useObserve from "../hooks/useObserve";
+import Section from "../components/section/section";
 
 export default function Skills() {
-    const ref = useRef<HTMLDivElement>(null);
-    useObserve(ref);
-    
     return (
-        <section className="--section-container" id="skills" ref={ref}>
-            <p>Flexing time!</p>
-        </section>
+        <Section id="skills" tagline="Flexing time!">
+            Skills
+        </Section>
     );
 }

@@ -17,7 +17,7 @@ export default function App() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: [0.5, 0.75, 1.0]
+      threshold: [0.75, 1.0]
     }
     function callback(entries: IntersectionObserverEntry[], observer: IntersectionObserver) {
       entries.forEach(entry => {

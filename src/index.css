@@ -10,7 +10,7 @@
 	--color-secondary-dark-text: #000;
 	--color-tertiary-text: #000;
 
-	--navbar-width: 140px;
+	--navbar-width: 130px;
 
 	--scrollbar-track-color: var(--color-primary-dark);
 	--scrollbar-thumb-color: var(--color-secondary-dark);
@@ -32,26 +32,28 @@ body,
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', 'Space Grotesk', 'Roboto', 'Ubuntu', sans-serif;
-    scrollbar-width: auto;
-    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Poppins', 'Space Grotesk', 'Roboto', 'Ubuntu', sans-serif;
+	scrollbar-width: auto;
+	scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 *::-webkit-scrollbar {
-    width: 6px;
+	width: 6px;
 }
+
 *::-webkit-scrollbar-track {
-    background: var(--scrollbar-track-color);
+	background: var(--scrollbar-track-color);
 }
+
 *::-webkit-scrollbar-thumb {
-    background: var(--scrollbar-thumb-color);
-    border-radius: 20px;
+	background: var(--scrollbar-thumb-color);
+	border-radius: 20px;
 }
 
 code {
@@ -60,21 +62,5 @@ code {
 }
 
 html {
-    scroll-snap-type: y mandatory;
-}
-
-.--section-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--color-secondary);
-    font-size: 100px;
-    color: var(--color-secondary-text);
-    scroll-snap-align: start;
-}
-
-.--section-container:nth-child(odd) {
-    background: var(--color-primary);
-    color: var(--color-primary-text);
+	scroll-snap-type: y mandatory;
 }

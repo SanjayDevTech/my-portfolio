@@ -7,7 +7,7 @@ export default function Navbar() {
     const [section] = useSection();
     return (
         <header className="--navbar-header">
-            <p className="--navbar-brand" title="Sanjay S">Sanjay S</p>
+            <p className="--navbar-brand" title="Sanjay S">Sanjay</p>
             <nav className="--navbar-nav">
                 <ul className="--navbar-list">
                     {navItems.map(item => (
@@ -29,7 +29,7 @@ export default function Navbar() {
                 </ul>
             </nav>
             <p className="--navbar-footer">
-                Created by me on<br /><a className="--navbar-footer-link" target="_blank" href="https://github.com/SanjayDevTech/Portfolio">GitHub</a>
+                Created by me on <a className="--navbar-footer-link" target="_blank" href="https://github.com/SanjayDevTech/Portfolio">GitHub</a>
             </p>
         </header>
     );
