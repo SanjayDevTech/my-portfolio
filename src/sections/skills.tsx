@@ -6,7 +6,7 @@ export default function Skills() {
     useObserve(ref);
     
     return (
-        <section id="skills" ref={ref}>
+        <section className="--section-container" id="skills" ref={ref}>
             <p>Flexing time!</p>
         </section>
     );

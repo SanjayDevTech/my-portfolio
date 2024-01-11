@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Navbar from "./components/navbar/navbar"
 import SectionContext from "./context/SectionContext";
-import Home from "./sections/home";
+import Home from "./sections/home/home";
 import About from "./sections/about";
 import Works from "./sections/works";
 import Skills from "./sections/skills";

@@ -5,7 +5,7 @@ export default function Services() {
     const ref = useRef<HTMLDivElement>(null);
     useObserve(ref);
     return (
-        <section id="services" ref={ref}>
+        <section className="--section-container" id="services" ref={ref}>
             <p>I help you with</p>
         </section>
     );

@@ -11,7 +11,7 @@
 }
 
 .--navbar-brand {
-    font-size: var(--font-size-6);
+    font-size: var(--font-size-md);
     color: var(--color-primary-dark-text);
     text-decoration: none;
     font-weight: 700;
@@ -31,6 +31,7 @@
     margin: 4px;
     padding: 10px;
     color: var(--color-primary-dark-text);
+    font-size: var(--font-size-sm);
     list-style: none;
     border-radius: 6px;
     transition: .3s;
@@ -50,7 +51,7 @@
     color: var(--color-primary-dark-text);
     text-align: center;
     padding: 15px 5px;
-    font-size: var(--font-size-0);
+    font-size: var(--font-size-xs);
 }
 
 .--navbar-footer-link {
