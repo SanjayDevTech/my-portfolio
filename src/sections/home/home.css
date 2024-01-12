@@ -24,17 +24,89 @@
 .--home-section-profile-headline {
     font-size: var(--font-size-md);
     font-weight: 500;
-    margin-top: 10px;
     cursor: pointer;
+}
+
+.--home-section-profile-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
 }
 
 .--home-section-profile-picture-container {
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .--home-section-profile-picture {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover;
+    clip-path: circle();
+    filter: hue-rotate(30deg);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.--home-section-profile-picture:hover {
+    filter: none;
+}
+
+.--home-section-profile-contact-btn-secondary {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    padding: 0 10px;
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-text);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 5px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.--home-section-profile-contact-btn-secondary:hover {
+    filter: brightness(1.2);
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.--home-section-profile-contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    padding: 0 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: var(--color-primary-text);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 0 5px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+}
+
+.--home-section-profile-contact-btn svg {
+    fill: currentColor;
+    width: 26px;
+    height: 26px;
+}
+
+.--home-section-profile-contact-btn:hover {
+    background-color: white;
+    color: black;
 }

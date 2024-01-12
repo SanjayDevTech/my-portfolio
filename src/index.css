@@ -37,7 +37,7 @@ body,
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	font-family: 'Poppins', 'Space Grotesk', 'Roboto', 'Ubuntu', sans-serif;
-	scrollbar-width: auto;
+	scrollbar-width: thin;
 	scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;

@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Navbar from "./components/navbar/navbar"
 import SectionContext from "./context/SectionContext";
 import Home from "./sections/home/home";
@@ -12,7 +12,14 @@ export default function App() {
 
   const [activeSection, setActiveSection] = useState("");
 
-  const sectionContext = useMemo(() => [activeSection, setActiveSection], [activeSection, setActiveSection]);
+  const sectionContext = useMemo(() => [activeSection, (section: string) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  }] as const, [activeSection, setActiveSection]);
   const observer = useMemo(() => {
     const options = {
       root: null,

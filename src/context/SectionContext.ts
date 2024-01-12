@@ -1,5 +1,5 @@
 import { createContext } from "react";
 
-const SectionContext = createContext(["", (section: string) => console.log("SectionContext")]);
+const SectionContext = createContext<readonly [string,  (section: string) => void]>(["", () => {}] as const);
 
 export default SectionContext;

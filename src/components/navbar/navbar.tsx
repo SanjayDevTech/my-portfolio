@@ -4,10 +4,12 @@ import useSection from "../../hooks/useSection";
 import navItems from "./data";
 
 export default function Navbar() {
-    const [section] = useSection();
+    const [section, setSection] = useSection();
     return (
         <header className="--navbar-header">
-            <p className="--navbar-brand" title="Sanjay S">Sanjay</p>
+            <p onClick={() => {
+                setSection("home");
+            }} className="--navbar-brand" title="Sanjay S">Sanjay</p>
             <nav className="--navbar-nav">
                 <ul className="--navbar-list">
                     {navItems.map(item => (
@@ -29,7 +31,7 @@ export default function Navbar() {
                 </ul>
             </nav>
             <p className="--navbar-footer">
-                Created by me on <a className="--navbar-footer-link" target="_blank" href="https://github.com/SanjayDevTech/Portfolio">GitHub</a>
+                &copy; 2024 Sanjay S
             </p>
         </header>
     );
