@@ -39,7 +39,11 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    document.title = `Sanjay - Portfolio | ${sectionToLabel(activeSection)}`;
+    let title = "Sanjay S - Portfolio";
+    if (activeSection) {
+      title = `${title} | ${sectionToLabel(activeSection)}`;
+    }
+    document.title = title;
   }, [activeSection]);
 
   return (
