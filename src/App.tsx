@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Navbar from "./components/navbar/navbar"
 import SectionContext from "./context/SectionContext";
 import Home from "./sections/home/home";
@@ -7,12 +7,14 @@ import Works from "./sections/works";
 import Skills from "./sections/skills";
 import Services from "./sections/services";
 import GlobalIntersectionObserverContext from "./context/GlobalIntersectionObserverContext";
+import { sectionToLabel } from "./utils";
 
 export default function App() {
 
   const [activeSection, setActiveSection] = useState("");
 
   const sectionContext = useMemo(() => [activeSection, (section: string) => {
+    setActiveSection(section);
     const element = document.getElementById(section);
     if (element) {
       element.scrollIntoView({
@@ -35,6 +37,10 @@ export default function App() {
     }
     return new IntersectionObserver(callback, options);
   }, []);
+
+  useEffect(() => {
+    document.title = `Sanjay - Portfolio | ${sectionToLabel(activeSection)}`;
+  }, [activeSection]);
 
   return (
     <GlobalIntersectionObserverContext.Provider value={observer}>

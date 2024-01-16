@@ -2,6 +2,7 @@ import clsx from "clsx";
 import "./navbar.css";
 import useSection from "../../hooks/useSection";
 import navItems from "./data";
+import { sectionToLabel } from "../../utils";
 
 export default function Navbar() {
     const [section, setSection] = useSection();
@@ -26,7 +27,7 @@ export default function Navbar() {
                             className={clsx("--navbar-item", {
                                 "--navbar-item-active": section === item.id
                             })}
-                            title={item.title}>{item.label}</li>
+                            title={item.title}>{sectionToLabel(item.id)}</li>
                     ))}
                 </ul>
             </nav>
