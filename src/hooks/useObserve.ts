@@ -5,8 +5,9 @@ export default function useObserve(ref: RefObject<HTMLDivElement>) {
     const observer = useContext(GlobalIntersectionObserverContext);
     useEffect(() => {
         if (observer) {
-            observer.observe(ref.current!);
-            return () => observer.unobserve(ref.current!);
+            const el = ref.current!;
+            observer.observe(el);
+            return () => observer.unobserve(el);
         }
     }, [observer]);
 }

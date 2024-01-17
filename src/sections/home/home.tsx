@@ -1,7 +1,7 @@
 import "./home.css";
 import Section from "../../components/section/section";
 import { useState } from "react";
-import GitHubIcon from "../../components/github";
+import { GitHubIcon } from "../../components/social-icons";
 
 const headlines = ["Software Developer", "Android Developer", "Web Developer"];
 
