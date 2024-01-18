@@ -10,7 +10,7 @@ function Footer() {
 	const year = useMemo(() => new Date().getFullYear(), []);
 	const isMobile = useMobile();
 
-	const title = process.env.VITE_APP_TITLE || "Sanjay S";
+	const title = import.meta.env.VITE_APP_TITLE || "Sanjay S";
 
 	const CONTENT = <><SmallText color="text">Designed & Developed by {title}</SmallText>
 		<SmallText color="text">Copyright © {year} {title}</SmallText>
