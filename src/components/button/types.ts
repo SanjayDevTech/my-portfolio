@@ -1,4 +1,4 @@
-import Colors from "#theme/Colors";
+import Colors from "#theme/colors";
 
 type ButtonProps = React.ComponentProps<"button"> & {
     color: keyof typeof Colors;

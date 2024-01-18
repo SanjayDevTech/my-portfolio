@@ -1,4 +1,4 @@
-import Colors from "#theme/Colors";
+import Colors from "#theme/colors";
 import { motion, useAnimation } from "framer-motion";
 import HamburgerProps from "./types";
 import * as Styles from "./styles";

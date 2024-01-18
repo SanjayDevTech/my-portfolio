@@ -1,4 +1,4 @@
-import Colors from "#theme/Colors";
+import Colors from "#theme/colors";
 
 export default interface SectionProps {
     children: React.ReactNode;
