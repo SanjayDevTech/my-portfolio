@@ -26,6 +26,9 @@ export const SocialIconWrapper = styled.div`
 	height: 96px;
 	width: 96px;
 	margin: 30px;
+    @media (max-width: 870px) {
+        margin: 20px;
+    }
 `;
 
 export const Link = styled.a`

@@ -16,7 +16,7 @@ function IntroductionSection() {
                     <SmallText style={{
                         width: "60%"
                     }} color="primaryDark" highlightColor="primary">
-                        I am a final-year CSE student from <span>Coimbatore</span>, Tamil Nadu.<br />
+                        I am a Software Engineer from <span>Coimbatore</span>, Tamil Nadu.<br />
                         I love building apps and websites for different platforms using <span>modern frameworks</span>.
                     </SmallText>
                 </>
@@ -27,7 +27,7 @@ function IntroductionSection() {
                         textAlign: "center",
                         padding: "0 30px",
                     }} color="primaryDark" highlightColor="primary">
-                        I am a final-year CSE student from <span>Coimbatore</span>, Tamil Nadu.
+                        I am a Software Engineer from <span>Coimbatore</span>, Tamil Nadu.
                     </SmallText>
                     <SmallText style={{
                         textAlign: "center",
