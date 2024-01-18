@@ -4,8 +4,8 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 import path from "path";
 
 const about = {
-  title: import.meta.env.VITE_APP_TITLE || "Sanjay S",
-  description: import.meta.env.VITE_APP_DESCRIPTION || "Sanjay S Profile",
+  title: process.env.VITE_APP_TITLE || "Sanjay S",
+  description: process.env.VITE_APP_DESCRIPTION || "Sanjay S Profile",
 }
 
 // https://vitejs.dev/config/
