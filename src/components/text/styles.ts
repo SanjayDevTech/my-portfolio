@@ -7,6 +7,7 @@ export const Text = styled.span<{
     $fontWeight: SubVariant<FontWeightNumber>;
     $fontStyle: SubVariant<FontStyleString>;
     $highlightColor?: string;
+    $center?: boolean;
 }>`
     display: inline-block;
     color: ${p => p.$color};
@@ -21,4 +22,5 @@ export const Text = styled.span<{
     & > span {
         color: ${p => p.$highlightColor};
     }
+    text-align: ${p => p.$center ? "center" : "left"};
 `;

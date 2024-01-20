@@ -1,6 +1,6 @@
 import TextProps from "./types";
 import * as Styles from "./styles";
-import { getFontSize, getFontStyle, getFontWeight, TextVariants } from "#theme/TextStyles";
+import { getFontSize, getFontStyle, getFontWeight } from "#theme/TextStyles";
 import { getColor } from "#theme/colors";
 
 export default function Text(props: TextProps) {
@@ -13,6 +13,7 @@ export default function Text(props: TextProps) {
       $fontSize={getFontSize(variant)}
       $color={getColor(color)}
       $highlightColor={getColor(highlightColor ?? "text")}
+      $center={props.center}
       {...childProps}
     />
   );
