@@ -22,7 +22,9 @@ function Header() {
   return (
     <Styles.Container>
       <Styles.Wrapper>
-        <Styles.BrandImage src={brandImage} alt={"Brand"} />
+        <Styles.BrandImage onClick={() => {
+          navigate("/");
+        }} src={brandImage} alt={"Brand"} />
         <Text variant="small" color="primaryDark">Sanjay</Text>
         <Styles.Grow />
         {isMobile

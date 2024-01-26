@@ -30,6 +30,12 @@ const ButtonTextStyle: TextStyle = {
   fontStyle: "normal",
 };
 
+const ButtonMiniTextStyle: TextStyle = {
+  fontSize: 25,
+  fontWeight: FontWeight.medium,
+  fontStyle: "normal",
+};
+
 const SmallMiniTextStyle: TextStyle = {
   fontSize: 18,
   fontWeight: FontWeight.regular,
@@ -53,6 +59,7 @@ const TextStyles = {
   MediumTextStyle,
   LargeTextStyle,
   ButtonTextStyle,
+  ButtonMiniTextStyle,
   SmallMiniTextStyle,
   MediumMiniTextStyle,
   LargeMiniTextStyle,
@@ -75,7 +82,7 @@ const LargeTextStyleVariant: SubVariant<TextStyle> = {
 
 const ButtonTextStyleVariant: SubVariant<TextStyle> = {
   main: ButtonTextStyle,
-  mini: ButtonTextStyle,
+  mini: ButtonMiniTextStyle,
 };
 
 const TextStyleVariants: Variant<TextStyle> = {

@@ -1,8 +1,8 @@
 import GitHubCalendar from "react-github-calendar";
-import "react-bubble-ui/dist/index.css";
 import useMobile from "#hooks/useMobile";
-import Bubble from "#components/bubble";
 import { SmallText } from "#components/text";
+import { Link } from "react-router-dom";
+import Showcase from "#components/showcase";
 
 const skills = [
   { icon: "https://raw.githubusercontent.com/github/explore/8baf984947f4d9c32006bd03fa4c51ff91aadf8d/topics/react/react.png", name: "React" },
@@ -30,13 +30,14 @@ const tools = [
 export default function AboutPage() {
   const isMobile = useMobile();
   return <>
-  <div style={{
+    <div style={{
       padding: isMobile ? "0 20px" : "0 100px",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      height: "420px",
+      height: "max-content",
+      minHeight: "330px",
     }}>
       <SmallText center color="black">
         Hi, I'm Sanjay 👋
@@ -48,39 +49,46 @@ export default function AboutPage() {
         On my free time, I work on Android apps.
         <br />
       </SmallText>
+      <br />
       <SmallText center color="black">
-        I have created some open source projects. Check them out: <a href="/projects">Projects</a>
+        I have created some open source projects. Check them out: <Link to="/projects">Projects</Link>
       </SmallText>
     </div>
+    <hr style={{ width: "100%", margin: "10px 0" }} />
     <div style={{
       padding: isMobile ? "0 10px" : "0 100px",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      height: "420px",
+      minHeight: "200px",
+      margin: isMobile ? 10 : 20,
     }}>
       <h2>Skills</h2>
-      <Bubble id="bubble-skills" items={skills} />
+      <Showcase items={skills} />
     </div>
+    <hr style={{ width: "100%", margin: "10px 0" }} />
     <div style={{
       padding: isMobile ? "0 10px" : "0 100px",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      height: "420px",
+      minHeight: "200px",
+      margin: isMobile ? 10 : 20,
     }}>
       <h2>Tools</h2>
-      <Bubble id="bubble-tools" items={tools} />
+      <Showcase items={tools} />
     </div>
+    <hr style={{ width: "100%", margin: "10px 0" }} />
     <div style={{
       padding: isMobile ? "5px" : "0 100px",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      height: "420px",
+      minHeight: "250px",
+      marginBottom: isMobile ? 0 : 60,
     }}>
       <h2>GitHub Contributions Chart</h2>
       <GitHubCalendar username="SanjayDevTech" colorScheme="light" blockSize={isMobile ? 6 : 10} blockMargin={isMobile ? 1.5 : 5} fontSize={isMobile ? 10 : 20} />

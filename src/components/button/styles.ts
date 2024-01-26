@@ -12,4 +12,9 @@ export const Wrapper = styled.button<{
     border: none;
     cursor: pointer;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+    @media (max-width: 400px) {
+        width: 250px;
+        height: 80px;
+    }
 `;
