@@ -1,10 +1,12 @@
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 
-import AboutPage from "#pages/about";
-import HomePage from "#pages/home";
-import ProjectsPage from "#pages/projects";
 import Layout from "#pages/layout";
-import ErrorPage from "#pages/error";
+import { lazy, Suspense } from "react";
+
+const HomePage = lazy(() => import("#pages/home"));
+const AboutPage = lazy(() => import("#pages/about"));
+const ProjectsPage = lazy(() => import("#pages/projects"));
+const ErrorPage = lazy(() => import("#pages/error"));
 
 const routes = createBrowserRouter(
   createRoutesFromElements(
@@ -17,5 +19,9 @@ const routes = createBrowserRouter(
 );
 
 export default function AppRoutes() {
-  return <RouterProvider router={routes} />;
+  return (
+    <Suspense fallback={<></>}>
+      <RouterProvider router={routes} />
+    </Suspense>
+  );
 }
