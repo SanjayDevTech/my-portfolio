@@ -16,6 +16,9 @@ export const ContactRowWrapper = styled.div`
     align-items: center;
     justify-content: center;
     width: 80%;
+    @media (max-width: 870px) {
+        width: 100%;
+    }
 `;
 
 export const SocialIconWrapper = styled.div`
@@ -26,6 +29,12 @@ export const SocialIconWrapper = styled.div`
 	height: 96px;
 	width: 96px;
 	margin: 30px;
+    @media (max-width: 870px) {
+        margin: 20px;
+    }
+    @media (max-width: 420px) {
+        margin: 10px;
+    }
 `;
 
 export const Link = styled.a`

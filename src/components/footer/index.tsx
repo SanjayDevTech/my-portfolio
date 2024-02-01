@@ -4,15 +4,16 @@ import * as Styles from "./styles";
 
 import { footerLinks } from "#config/links";
 import { SmallText } from "#components/text";
-import about from "../../../about.json";
 import useMobile from "#hooks/useMobile";
 
 function Footer() {
 	const year = useMemo(() => new Date().getFullYear(), []);
 	const isMobile = useMobile();
 
-	const CONTENT = <><SmallText color="text">Designed & Developed by {about.title}</SmallText>
-		<SmallText color="text">Copyright © {year} {about.title}</SmallText>
+	const title = import.meta.env.VITE_APP_TITLE || "Sanjay S";
+
+	const CONTENT = <><SmallText color="text">Designed & Developed by {title}</SmallText>
+		<SmallText color="text">Copyright © {year} {title}</SmallText>
 		<Styles.SocialMediaRow>
 			{footerLinks.map((link) => (
 				<Styles.SocialIconWrapper key={link.name}>

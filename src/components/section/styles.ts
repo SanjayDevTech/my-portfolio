@@ -4,7 +4,7 @@ export const Wrapper = styled.div<{
     $backgroundColor: string;
 }>`
 	padding: 0 100px;
-	height: clamp(600px, 681px, calc(100vh - 120px));
+	height: clamp(636px, 681px, calc(100vh - 120px));
 	background-color: ${(p) => p.$backgroundColor};
 	display: flex;
 	align-items: center;
@@ -13,7 +13,7 @@ export const Wrapper = styled.div<{
 `;
 
 export const MobileWrapper = styled(Wrapper)`
-	padding: 0 20px;
+	padding: 20px;
 	flex-direction: column;
 	justify-content: center;
 	row-gap: 35px;

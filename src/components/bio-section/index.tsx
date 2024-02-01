@@ -9,9 +9,9 @@ function BioSection() {
 	const isMobile = useMobile();
 
 	const TEXT_CONTENT = (
-		<Styles.ContentWrapper>
-			<LargeText color="text">Hi, I{"\u2019"}m Sanjay</LargeText>
-			<MediumText width={"50%"} color="text">
+		<Styles.ContentWrapper center={isMobile}>
+			<LargeText center={isMobile} color="text">Hi, I{"\u2019"}m Sanjay</LargeText>
+			<MediumText center={isMobile} width={"50%"} color="text">
 				Developer
 				<br />
 				Open Source Enthusiast

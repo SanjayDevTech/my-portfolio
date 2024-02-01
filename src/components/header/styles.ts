@@ -14,6 +14,7 @@ export const BrandImage = styled.img`
 	height: 64px;
 	width: 64px;
 	margin: 0 18px 0 0;
+	cursor: pointer;
 `;
 
 export const ActionIcon = styled.img`

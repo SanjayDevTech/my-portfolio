@@ -12,14 +12,12 @@ function ResumeSection() {
     const CONTENT = (
         <>
             <SmallText color="white">
-                Looking for Full time/Internship roles:
+                Looking for Freelancing opportunities in:
                 <ul>
                     <li>Android Development</li>
-                    <li>Full stack Development</li>
+                    <li>Web Development</li>
                     <li>Flutter Development</li>
                 </ul>
-                <br />
-                Also looking for freelancing.
             </SmallText>
             <Styles.ButtonWrapper>
                 <Button color="primaryDark" onClick={() => {
