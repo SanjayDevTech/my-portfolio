@@ -3,6 +3,7 @@ export default interface ProjectProps {
     description: string;
     imageUrl: string;
     codeUrl?: string;
+    deployedUrl?: string;
     demoUrl?: string;
     tags: Tag[];
 }

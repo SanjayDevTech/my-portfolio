@@ -2,6 +2,7 @@ import Text from "#components/text";
 import ProjectProps, { Tag } from "./types";
 import githubIcon from "#assets/github-mark.svg";
 import linkIcon from "#assets/link.svg";
+import playIcon from "#assets/play.svg";
 
 const getTagBgColor = (tag: Tag) => {
     switch (tag) {
@@ -54,11 +55,18 @@ export default function Project(props: ProjectProps) {
             icon: githubIcon,
         });
     }
+    if (props.deployedUrl) {
+        options.push({
+            name: "deployed",
+            url: props.deployedUrl,
+            icon: linkIcon,
+        });
+    }
     if (props.demoUrl) {
         options.push({
             name: "demo",
             url: props.demoUrl,
-            icon: linkIcon,
+            icon: playIcon,
         });
     }
 
@@ -81,15 +89,12 @@ export default function Project(props: ProjectProps) {
                 flexDirection: "column",
             }}>
                 {options.map((option, index) => (
-                    <div title={option.name} onClick={() => {
-                        window.open(option.url, "_blank");
-                    }} style={{
+                    <a title={option.name} href={option.url} target="_blank" style={{
                         background: "white",
                         borderRadius: "50%",
-                        width: "45px",
-                        height: "45px",
-                        cursor: "pointer",
-                        marginTop: `${index*10}px`,
+                        width: "40px",
+                        height: "40px",
+                        marginTop: `${index ? 10 : 0}px`,
                     }} key={index}>
                         <img src={option.icon} alt={option.name} style={{
                             width: "100%",
@@ -97,7 +102,7 @@ export default function Project(props: ProjectProps) {
                             objectFit: "cover",
                             objectPosition: "center",
                         }} />
-                    </div>
+                    </a>
                 ))}
             </div>
             }
