@@ -12,6 +12,12 @@ const SmallTextStyle: TextStyle = {
   fontStyle: "normal",
 };
 
+const MiniTextStyle: TextStyle = {
+  fontSize: 14,
+  fontWeight: FontWeight.regular,
+  fontStyle: "normal",
+};
+
 const MediumTextStyle: TextStyle = {
   fontSize: 50,
   fontWeight: FontWeight.medium,
@@ -38,6 +44,12 @@ const ButtonMiniTextStyle: TextStyle = {
 
 const SmallMiniTextStyle: TextStyle = {
   fontSize: 18,
+  fontWeight: FontWeight.regular,
+  fontStyle: "normal",
+};
+
+const MiniMiniTextStyle: TextStyle = {
+  fontSize: 12,
   fontWeight: FontWeight.regular,
   fontStyle: "normal",
 };
@@ -85,11 +97,17 @@ const ButtonTextStyleVariant: SubVariant<TextStyle> = {
   mini: ButtonMiniTextStyle,
 };
 
+const MiniTextStyleVariant: SubVariant<TextStyle> = {
+  main: MiniTextStyle,
+  mini: MiniMiniTextStyle,
+};
+
 const TextStyleVariants: Variant<TextStyle> = {
   small: SmallTextStyleVariant,
   medium: MediumTextStyleVariant,
   large: LargeTextStyleVariant,
   button: ButtonTextStyleVariant,
+  mini: MiniTextStyleVariant,
 };
 
 export function getFontStyle(variant: keyof typeof TextStyleVariants): SubVariant<FontStyleString> {

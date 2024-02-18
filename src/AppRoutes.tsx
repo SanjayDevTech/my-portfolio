@@ -20,7 +20,9 @@ const routes = createBrowserRouter(
 
 export default function AppRoutes() {
   return (
-    <Suspense fallback={<></>}>
+    <Suspense fallback={<div className="loading-container">
+      Loading...
+    </div>}>
       <RouterProvider router={routes} />
     </Suspense>
   );
