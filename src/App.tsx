@@ -14,7 +14,6 @@ export default function App() {
   const [activeSection, setActiveSection] = useState("");
 
   const sectionContext = useMemo(() => [activeSection, (section: string) => {
-    setActiveSection(section);
     const element = document.getElementById(section);
     if (element) {
       element.scrollIntoView({
