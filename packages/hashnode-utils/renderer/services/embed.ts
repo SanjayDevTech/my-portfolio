@@ -200,6 +200,8 @@ export const triggerEmbed = async (node?: Element | undefined) => {
 	gistFrameDoc.close();
 };
 
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "";
+
 export const loadIframeResizer = () => {
 	return new Promise((resolve) => {
 		// @ts-ignore
@@ -208,7 +210,7 @@ export const loadIframeResizer = () => {
 		}
 		const script = document.createElement('script');
 
-		script.src = `/js/iframe-resizer.js`;
+		script.src = `${BASE_URL}/js/iframe-resizer.js`;
 		script.async = true;
 		script.defer = true;
 
