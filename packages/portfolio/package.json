@@ -1,13 +1,17 @@
 {
-	"name": "rooth",
+	"name": "portfolio",
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json}\"",
+		"start": "next start"
 	},
-	"workspaces": [
-		"packages/*"
-	],
 	"dependencies": {
+		"@csstools/normalize.css": "^12.1.1",
+		"classnames": "^2.3.1",
+		"lineicons": "^1.0.3",
 		"next": "^14.1.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
