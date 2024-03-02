@@ -1,9 +1,9 @@
-import Section from "../section/section";
+import Section from '../section/section';
 
 export default function Services() {
-    return (
-        <Section id="services" tagline="I help you with">
-            Services
-        </Section>
-    );
+	return (
+		<Section id="services" tagline="I help you with">
+			Services
+		</Section>
+	);
 }

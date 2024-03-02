@@ -1,9 +1,9 @@
-import Section from "../section/section";
+import Section from '../section/section';
 
 export default function Skills() {
-    return (
-        <Section id="skills" tagline="Flexing time!">
-            Skills
-        </Section>
-    );
+	return (
+		<Section id="skills" tagline="Flexing time!">
+			Skills
+		</Section>
+	);
 }
