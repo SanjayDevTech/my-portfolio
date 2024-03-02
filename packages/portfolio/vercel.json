@@ -1,5 +1,4 @@
 {
-	"routes": [{ "handle": "filesystem" }, { "src": "/(.*)", "dest": "/index.html" }],
 	"rewrites": [{ "source": "/blog/:path*", "destination": "https://blog.sanjaydev.tech/blog/:path*" }],
 	"framework": "nextjs"
 }
