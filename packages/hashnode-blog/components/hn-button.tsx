@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { twJoin, twMerge } from 'tailwind-merge';
 
 type ButtonProps = {

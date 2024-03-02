@@ -44,15 +44,7 @@ export const Header = (props: Props) => {
 						)}
 					>
 						<HeaderBlogSearch publication={publication} />
-						<Link
-							// [LINK]
-							href="/newsletter"
-							className="flex flex-row items-center justify-start gap-2 rounded-full border px-2 py-2 text-sm font-semibold transition-colors duration-200 md:px-5 md:py-3 md:text-base md:justify-center"
-						>
-							<div className="flex flex-row items-center gap-2">
-								Subscribe
-							</div>
-						</Link>
+						{publication.preferences?.enabledPages?.newsletter && <Button label="Subscribe" href={"/newsletter"} as="a" type="primary" />}
 					</div>
 				</div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-
+import Link from 'next/link';
 import { CheckSVG } from './icons/svgs';
 import CustomScrollArea from './scroll-area';
 import { twJoin } from 'tailwind-merge';

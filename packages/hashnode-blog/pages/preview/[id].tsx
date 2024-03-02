@@ -2,7 +2,7 @@ import request from 'graphql-request';
 import ErrorPage from 'next/error';
 import Head from 'next/head';
 import moment from 'dayjs';
-
+import Link from 'next/link';
 import { Container } from '../../components/container';
 import { AppProvider } from '../../components/contexts/appContext';
 import PostPageNavbar from '../../components/post-page-navbar';
