@@ -1,10 +1,10 @@
 import "../styles/index.css";
 import "../styles/anim.css";
-import { Inter } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import Head from "next/head";
 import { Metadata, Viewport } from 'next'
 
-const font = Inter({ subsets: ['latin'], weight: ["500", "700"] });
+const font = Poppins({ subsets: ['latin'], weight: ["400", "500", "600", "700"] });
 
 export const viewport: Viewport = {
     themeColor: '#151e3f',

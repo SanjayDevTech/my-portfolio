@@ -19,14 +19,14 @@ export default function About() {
                     <Social type="linkedin" href="https://www.linkedin.com/in/sanjaydevtech" />
                     <Social type="youtube" href="https://www.youtube.com/@SanjayDevTech" />
                     <Social type="medium" href="https://sanjaydevtech.medium.com" username="@sanjaydevtech" />
-                    <Social type="gmail" href="mailto:hello@sanjaydev.tech" username="hello@sanjaydev.tech" />
+                    {/* <Social type="gmail" href="mailto:hello@sanjaydev.tech" username="hello@sanjaydev.tech" /> */}
                     <Social type="twitter" href="https://twitter.com/SanjayDevTech" />
                 </div>
 
             </div>
             <div className="--about-section-half">
                 <div className="--about-section-passion">
-                    <h1>Positions</h1>
+                    <h2>Positions</h2>
                     <ul>
                         <li title="GDSC Club Lead" className="--about-section-passion-item">
                             <div className="--about-section-position-container primary">
@@ -41,7 +41,7 @@ export default function About() {
                     </ul>
                 </div>
                 <div className="--about-section-hobbies">
-                    <h1>Hobbies</h1>
+                    <h2>Hobbies</h2>
                     <ul>
                         <li title="GDSC Club Lead" className="--about-section-passion-item">
                             <div className="--about-section-position-container primary">
