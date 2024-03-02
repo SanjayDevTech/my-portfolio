@@ -2,14 +2,14 @@ import {
 	GitHubIcon,
 	GmailIcon,
 	LinkedInIcon,
-	MediumIcon,
+	NextjsIcon,
 	TwitterIcon,
 	YoutubeIcon,
 } from '../social-icons';
 import './social.css';
 
 interface SocialProps {
-	type: 'github' | 'linkedin' | 'twitter' | 'youtube' | 'medium' | 'gmail';
+	type: 'github' | 'linkedin' | 'twitter' | 'youtube' | 'hashnode' | 'gmail';
 	href: string;
 	username?: string;
 }
@@ -36,9 +36,9 @@ function getProperties(type: SocialProps['type']) {
 				icon: <YoutubeIcon className="--social-link-icon" />,
 				color: 'red',
 			};
-		case 'medium':
+		case 'hashnode':
 			return {
-				icon: <MediumIcon className="--social-link-icon" />,
+				icon: <NextjsIcon className="--social-link-icon" />,
 				color: 'white',
 			};
 		case 'gmail':

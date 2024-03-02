@@ -20,8 +20,8 @@ export const YoutubeIcon = (props: SocialIconProps) => (
 	<i aria-hidden className={clsx('lni', 'lni-youtube', props.className)} />
 );
 
-export const MediumIcon = (props: SocialIconProps) => (
-	<i aria-hidden className={clsx('lni', 'lni-medium', props.className)} />
+export const NextjsIcon = (props: SocialIconProps) => (
+	<i aria-hidden className={clsx('lni', 'lni-nextjs', props.className)} />
 );
 
 export const GmailIcon = (props: SocialIconProps) => (

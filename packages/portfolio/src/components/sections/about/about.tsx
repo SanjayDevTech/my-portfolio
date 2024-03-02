@@ -23,7 +23,7 @@ export default function About() {
 					<Social type="github" href="https://github.com/SanjayDevTech" />
 					<Social type="linkedin" href="https://www.linkedin.com/in/sanjaydevtech" />
 					<Social type="youtube" href="https://www.youtube.com/@SanjayDevTech" />
-					<Social type="medium" href="https://sanjaydevtech.medium.com" username="@sanjaydevtech" />
+					<Social type="hashnode" href="https://sanjaydev.tech/blog" username="sanjaydev.tech/blog" />
 					{/* <Social type="gmail" href="mailto:hello@sanjaydev.tech" username="hello@sanjaydev.tech" /> */}
 					<Social type="twitter" href="https://twitter.com/SanjayDevTech" />
 				</div>
