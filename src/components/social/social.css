@@ -19,8 +19,9 @@
 .--social-link-icon {
     width: 24px;
     height: 24px;
+    font-size: 23px;
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 4px;
 }
 
 .--social-color-black {
@@ -44,7 +45,7 @@
 }
 
 .--social-color-red-shade {
-    background-color: #c71610;
+    background-color: #1967d2;
     color: white;
 }
 

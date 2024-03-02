@@ -1,5 +1,5 @@
-import Section from "../../components/section/section";
-import Social from "../../components/social/social";
+import Section from "../../section/section";
+import Social from "../../social/social";
 import "./about.css";
 
 export default function About() {
@@ -19,7 +19,7 @@ export default function About() {
                     <Social type="linkedin" href="https://www.linkedin.com/in/sanjaydevtech" />
                     <Social type="youtube" href="https://www.youtube.com/@SanjayDevTech" />
                     <Social type="medium" href="https://sanjaydevtech.medium.com" username="@sanjaydevtech" />
-                    <Social type="gmail" href="mailto:sureshsanjay805@gmail.com" username="sureshsanjay805" />
+                    <Social type="gmail" href="mailto:hello@sanjaydev.tech" username="hello@sanjaydev.tech" />
                     <Social type="twitter" href="https://twitter.com/SanjayDevTech" />
                 </div>
 

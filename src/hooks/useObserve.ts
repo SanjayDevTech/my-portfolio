@@ -1,4 +1,4 @@
-import { Ref, RefObject, useContext, useEffect } from "react";
+import { RefObject, useContext, useEffect } from "react";
 import GlobalIntersectionObserverContext from "../context/GlobalIntersectionObserverContext";
 
 export default function useObserve(ref: RefObject<HTMLDivElement>) {

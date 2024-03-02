@@ -1,3 +1,11 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Google adsbot ignores robots.txt unless specifically named!
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://sanjaydev.tech/sitemap.xml
