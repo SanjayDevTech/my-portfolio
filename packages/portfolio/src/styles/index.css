@@ -1,0 +1,63 @@
+@import "@csstools/normalize.css";
+@import "../../../../node_modules/lineicons/web-font/css/icons.css";
+
+:root {
+	--color-primary: #151e3f;
+	--color-primary-dark: #030027;
+	--color-secondary: #dc9e82;
+	--color-secondary-dark: #fac9b2;
+	--color-tertiary: #f2f3d9;
+	--color-primary-text: #fff;
+	--color-primary-dark-text: #fff;
+	--color-secondary-text: #000;
+	--color-secondary-dark-text: #000;
+	--color-tertiary-text: #000;
+
+	--navbar-width: 130px;
+
+	--scrollbar-track-color: var(--color-primary);
+	--scrollbar-thumb-color: var(--color-secondary);
+
+	--font-size-xs: 12px;
+	--font-size-sm: 16px;
+	--font-size-md: 22px;
+	--font-size-lg: 32px;
+	--font-size-xl: 42px;
+	--font-size-xxl: 64px;
+	--font-size-xxxl: 100px;
+}
+
+html,
+body,
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	scrollbar-width: thin;
+	scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*::-webkit-scrollbar {
+	width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+	background: var(--scrollbar-track-color);
+}
+
+*::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb-color);
+	border-radius: 20px;
+}
+
+html {
+	scroll-snap-type: y mandatory;
+}

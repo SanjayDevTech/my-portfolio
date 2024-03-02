@@ -1,0 +1,26 @@
+.--section-container {
+    position: relative;
+	padding-left: var(--navbar-width);
+	height: 100vh;
+	background: var(--color-secondary);
+	color: var(--color-secondary-text);
+	scroll-snap-align: center;
+}
+
+.--section-tagline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+    font-size: var(--font-size-xxxl);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.--section-container:nth-child(odd) {
+	background: var(--color-primary);
+	color: var(--color-primary-text);
+}
