@@ -8,4 +8,4 @@ Allow: /
 User-agent: GPTBot
 Disallow: /
 
-Sitemap: https://sanjaydev.tech/sitemap.xml
+Sitemap: https://sanjaydev.tech/blog/sitemap.xml

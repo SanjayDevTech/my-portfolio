@@ -83,7 +83,8 @@ const Index = React.forwardRef((props: ButtonAtomProps, ref: React.Ref<any>) => 
   if (as === 'a') {
     delete restOfTheProps.type;
     return (
-      <a
+      // [LINK]
+      <Link
         ref={ref}
         href={href}
         className={twMerge(
@@ -97,7 +98,7 @@ const Index = React.forwardRef((props: ButtonAtomProps, ref: React.Ref<any>) => 
         {...restOfTheProps}
       >
         {children}
-      </a>
+      </Link>
     );
   }
 

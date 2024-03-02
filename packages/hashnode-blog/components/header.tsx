@@ -7,6 +7,7 @@ import HeaderLeftSidebar from './header-left-sidebar';
 import PublicationLogo from './publication-logo';
 import PublicationNavLinks from './publication-nav-links';
 import PublicationSocialLinks from './publication-social-links';
+import Link from 'next/link';
 
 type Props = {
 	currentMenuId?: string | null;
@@ -27,7 +28,7 @@ export const Header = (props: Props) => {
 						{/* Navigation for mobile view */}
 						<div
 							className={twJoin(
-								'md:hidden','dark:text-white',
+								'md:hidden', 'dark:text-white',
 							)}
 						>
 							<HeaderLeftSidebar publication={publication} />
@@ -39,11 +40,19 @@ export const Header = (props: Props) => {
 
 					<div
 						className={twJoin(
-							'flex flex-row items-center','dark:text-white',
+							'flex flex-row items-center', 'dark:text-white',
 						)}
 					>
 						<HeaderBlogSearch publication={publication} />
-						<Button as="a" href="/newsletter" type="primary" label="Subscribe" />
+						<Link
+							// [LINK]
+							href="/newsletter"
+							className="flex flex-row items-center justify-start gap-2 rounded-full border px-2 py-2 text-sm font-semibold transition-colors duration-200 md:px-5 md:py-3 md:text-base md:justify-center"
+						>
+							<div className="flex flex-row items-center gap-2">
+								Subscribe
+							</div>
+						</Link>
 					</div>
 				</div>
 
