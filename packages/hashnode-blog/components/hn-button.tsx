@@ -87,7 +87,7 @@ const Index = React.forwardRef((props: ButtonAtomProps, ref: React.Ref<any>) => 
       // [LINK]
       <Link
         ref={ref}
-        href={href}
+        href={href ?? '#'}
         className={twMerge(
           styles.default,
           active && styles.active,
