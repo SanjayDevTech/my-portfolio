@@ -1,6 +1,5 @@
 import NextJsSvg from '../../../icons/NextJsSvg';
 import Section from '../../section/section';
-import './home.css';
 
 export default function Home() {
 	return (

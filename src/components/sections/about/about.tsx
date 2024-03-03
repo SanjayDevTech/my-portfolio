@@ -1,6 +1,5 @@
 import Section from '../../section/section';
 import Social from '../../social/social';
-import './about.css';
 
 export default function About() {
 	return (

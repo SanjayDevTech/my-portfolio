@@ -1,7 +1,6 @@
 import { Metadata, Viewport } from 'next';
 import { Poppins } from 'next/font/google';
-import '../styles/anim.css';
-import '../styles/index.css';
+import "../styles/index.scss";
 
 const font = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
@@ -28,7 +27,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
 				/>
 			</head>
 			<body>
-				<div id="next-app" className={font.className}>
+				<div id="root" className={font.className}>
 					{props.children}
 				</div>
 				<script defer src="/_vercel/insights/script.js"></script>

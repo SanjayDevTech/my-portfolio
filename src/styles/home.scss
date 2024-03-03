@@ -7,6 +7,13 @@
     height: 100%;
 }
 
+@media screen and (max-width: $max-width-md) {
+    .--home-section-container {
+        flex-direction: column-reverse;
+        padding: 24px;
+    }
+}
+
 .--home-section-profile-name-container {
     display: flex;
     flex-direction: column;
@@ -14,6 +21,13 @@
     align-items: center;
     width: 50%;
     height: 100%;
+}
+
+@media screen and (max-width: $max-width-md) {
+    .--home-section-profile-name-container {
+        width: 100%;
+        height: 50%;
+    }
 }
 
 .--home-section-profile-name {
@@ -47,6 +61,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: $max-width-md) {
+    .--home-section-profile-picture-container {
+        width: 100%;
+        height: 60%;
+    }
 }
 
 .--home-section-profile-picture {
@@ -95,16 +116,17 @@
     transition: all 0.3s ease-in-out;
     margin: 0 5px;
     font-size: var(--font-size-sm);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .--home-section-profile-contact-btn.secondary {
-    background-color: var(--color-secondary);
-    color: var(--color-secondary-text);
+    border: 2px solid var(--color-secondary);
+    background-color: transparent;
+    color: var(--color-secondary);
 }
 
 .--home-section-profile-contact-btn.primary {
-    border: 1px solid white;
+    border: 2px solid white;
     background-color: transparent;
     color: var(--color-primary-text);
 }
@@ -112,6 +134,7 @@
 @media (hover: hover) {
     .--home-section-profile-contact-btn.secondary:hover {
         background-color: var(--color-secondary-dark);
+        color: var(--color-secondary-text);
         box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
     }
     .--home-section-profile-contact-btn.primary:hover {

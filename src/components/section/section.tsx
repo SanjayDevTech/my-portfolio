@@ -2,7 +2,6 @@ import clsx from 'classnames';
 import { useRef } from 'react';
 import useObserve from '../../hooks/useObserve';
 import useSection from '../../hooks/useSection';
-import './section.css';
 
 export default function Section(props: {
 	id: string;

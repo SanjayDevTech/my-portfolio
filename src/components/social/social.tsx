@@ -4,7 +4,6 @@ import LinkedInSvg from '../../icons/LinkedInSvg';
 import NextJsSvg from '../../icons/NextJsSvg';
 import TwitterSvg from '../../icons/TwitterSvg';
 import YouTubeSvg from '../../icons/YouTubeSvg';
-import './social.css';
 
 interface SocialProps {
 	type: 'github' | 'linkedin' | 'twitter' | 'youtube' | 'hashnode' | 'gmail';
