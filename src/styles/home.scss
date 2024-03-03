@@ -152,6 +152,7 @@
 @media (hover: none) {
     .--home-section-profile-contact-btn.secondary:active {
         background-color: var(--color-secondary-dark);
+        color: var(--color-secondary-text);
         box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.2);
     }
     .--home-section-profile-contact-btn.primary:active {
