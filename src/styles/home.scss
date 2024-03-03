@@ -36,6 +36,12 @@
     line-height: 1.8;
 }
 
+@media screen and (max-width: $max-width-md) {
+    .--home-section-profile-name {
+        font-size: var(--font-size-xxl);
+    }
+}
+
 .--home-section-profile-headline {
     font-size: var(--font-size-md);
     font-weight: 400;
@@ -72,12 +78,12 @@
 
 .--home-section-profile-picture {
     width: 80%;
-    height: 80%;
     user-select: none;
     --webkit-user-select: none;
     --moz-user-select: none;
     min-width: 300px;
     min-height: 300px;
+    max-height: 80%;
     object-fit: cover;
     clip-path: circle();
     filter: hue-rotate(30deg);
@@ -92,7 +98,7 @@
 }
 
 @media (hover: none) {
-    .--home-section-profile-picture:active {
+    .--home-section-profile-picture {
         filter: none;
     }
 }

@@ -23,7 +23,7 @@
 @media screen and (max-width: $max-width-md) {
 	
 	.--section-container {
-		height: calc(100vh - var(--navbar-height) * 2);
+		height: calc(100dvh - var(--navbar-height) * 2);
 	}
 	.--section-tagline {
 		font-size: var(--font-size-xxl);

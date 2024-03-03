@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Header from '../components/navbar/header';
 import About from '../components/sections/about/about';
 import Home from '../components/sections/home/home';
@@ -12,6 +12,7 @@ import Navbar from '../components/navbar/navbar';
 
 export default function App() {
 	const [activeSection, setActiveSection] = useState('');
+	const mainRef = useRef<HTMLElement>(null);
 	const [observer, setObserver] = useState<IntersectionObserver | null>(null);
 
 	const sectionContext = useMemo(
@@ -21,9 +22,7 @@ export default function App() {
 				(section: string) => {
 					const element = document.getElementById(section);
 					if (element) {
-						element.scrollIntoView({
-							behavior: 'smooth',
-						});
+						element.scrollIntoView();
 					}
 				},
 			] as const,
@@ -32,7 +31,7 @@ export default function App() {
 
 	useEffect(() => {
 		const options = {
-			root: null,
+			root: mainRef.current,
 			rootMargin: '0px',
 			threshold: [0.75, 1.0],
 		};
@@ -51,7 +50,7 @@ export default function App() {
 		<GlobalIntersectionObserverContext.Provider value={observer}>
 			<SectionContext.Provider value={sectionContext}>
 				<Header />
-				<main>
+				<main ref={mainRef}>
 					<Home />
 					<About />
 					<Works />

@@ -81,9 +81,19 @@
     background-color: var(--color-secondary);
 }
 
-.--navbar-item:hover {
-    color: var(--color-secondary-dark-text);
-    background-color: var(--color-secondary-dark);
+
+@media (hover: hover) {
+    .--navbar-item:hover {
+        color: var(--color-secondary-dark-text);
+        background-color: var(--color-secondary-dark);
+    }
+}
+
+@media (hover: none) {
+    .--navbar-item:active {
+        color: var(--color-secondary-dark-text);
+        background-color: var(--color-secondary-dark);
+    }
 }
 
 .--navbar-footer {
