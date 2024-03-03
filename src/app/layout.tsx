@@ -30,7 +30,6 @@ export default function RootLayout(props: { children: React.ReactNode }) {
 				<div id="root" className={font.className}>
 					{props.children}
 				</div>
-				<script defer src="/_vercel/insights/script.js"></script>
 			</body>
 		</html>
 	);
