@@ -2,6 +2,5 @@
 	"rewrites": [
 		{ "source": "/blog", "destination": "https://blog.sanjaydev.tech/blog" },
 		{ "source": "/blog/:path*", "destination": "https://blog.sanjaydev.tech/blog/:path*" }
-	],
-	"framework": "nextjs"
+	]
 }
