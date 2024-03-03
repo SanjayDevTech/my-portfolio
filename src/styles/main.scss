@@ -34,7 +34,7 @@ $max-width-md: 768px;
 	:root {
 		--navbar-width: 100%;
 		--navbar-height: 66px;
-		--navbar-brand-font-size: var(--font-size-xl);
+		--navbar-brand-font-size: var(--font-size-lg);
 	}
 }
 
@@ -62,7 +62,7 @@ html {
 
 @media screen and (max-width: 1024px) {
 	html {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }
 
