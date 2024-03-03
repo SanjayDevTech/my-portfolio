@@ -2,7 +2,7 @@ import { Metadata, Viewport } from 'next';
 import { Poppins } from 'next/font/google';
 import "../styles/index.scss";
 
-const font = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+const font = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
 
 export const viewport: Viewport = {
 	themeColor: '#151e3f',
