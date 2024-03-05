@@ -1,0 +1,35 @@
+.--not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 24px;
+    color: white;
+}
+
+.--not-found-home-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+}
+
+.--not-found-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.--not-found-description {
+    font-size: var(--font-size-md);
+    margin-bottom: 20px;
+    text-align: center;
+}

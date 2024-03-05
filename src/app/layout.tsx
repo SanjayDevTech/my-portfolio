@@ -16,9 +16,10 @@ export const metadata: Metadata = {
 	description: description,
 	robots: 'index, follow',
 	icons: [{ rel: 'icon', url: '/favicon.ico' }],
+	metadataBase: new URL('https://sanjaydev.tech'),
 	openGraph: {
 		type: "profile",
-		url: "https://sanjaydev.tech",
+		url: "/",
 		title: title,
 		description: description,
 		images: [{ url: '/assets/metadata-image.png', alt: title }],
@@ -28,7 +29,6 @@ export const metadata: Metadata = {
 		site: '@sanjaydevtech',
 		title: title,
 		description: description,
-		creator: '@sanjaydevtech',
 		images: [{ url: '/assets/metadata-image.png', alt: title }],
 	},
 };
