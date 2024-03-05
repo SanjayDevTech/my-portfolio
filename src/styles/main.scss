@@ -39,21 +39,19 @@ $max-width-md: 768px;
 }
 
 html,
-body,
-#root {
+body {
 	width: 100%;
 }
 
-#root {
+body {
 	display: flex;
 	flex-direction: row;
 }
 
 @media screen and (max-width: $max-width-md){
-	#root {
+	body {
 		flex-direction: column;
 	}
-	
 }
 
 html {
@@ -66,27 +64,16 @@ html {
 	}
 }
 
-@media screen and (max-width: $max-width-md) {
-	html {
-		font-size: 12px;
-	}
-}
-
 main {
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	-webkit-overflow-scrolling: touch;
 	height: 100vh;
 	width: 100%;
 }
 
 @media screen and (max-width: $max-width-md){
 	main{
-		scroll-snap-type: y mandatory;
-		overflow-y: scroll;
-		overflow-x: hidden;
-		-webkit-overflow-scrolling: touch;
 		height: calc(100dvh - var(--navbar-height) * 2);
 	}
 }
@@ -98,19 +85,4 @@ main {
 	scroll-behavior: smooth;
 	scrollbar-width: thin;
 	scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-*::-webkit-scrollbar {
-	width: 6px;
-}
-
-*::-webkit-scrollbar-track {
-	background: var(--scrollbar-track-color);
-}
-
-*::-webkit-scrollbar-thumb {
-	background: var(--scrollbar-thumb-color);
-	border-radius: 20px;
 }

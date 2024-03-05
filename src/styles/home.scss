@@ -79,8 +79,6 @@
 .--home-section-profile-picture {
     width: 80%;
     user-select: none;
-    --webkit-user-select: none;
-    --moz-user-select: none;
     min-width: 200px;
     min-height: 200px;
     max-height: 80%;
@@ -105,9 +103,7 @@
 
 .--home-section-profile-contact-btn {
     user-select: none;
-    -webkit-user-select: none;
     text-decoration: none;
-    -moz-user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;

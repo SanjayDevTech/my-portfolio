@@ -8,28 +8,36 @@ export const viewport: Viewport = {
 	themeColor: '#151e3f',
 };
 
+const title = 'Sanjay S | Portfolio';
+const description = 'Sanjay, S is a Software Developer having skills on both Android and Web development. He also writes tech blogs on his website. Published videos on YouTube.';
+
 export const metadata: Metadata = {
-	title: 'Sanjay S - Portfolio',
-	description:
-		'Sanjay, S is a Software Developer having skills on both Android and Web development',
+	title: title,
+	description: description,
 	robots: 'index, follow',
 	icons: [{ rel: 'icon', url: '/favicon.ico' }],
+	openGraph: {
+		type: "profile",
+		url: "https://sanjaydev.tech",
+		title: title,
+		description: description,
+		images: [{ url: '/assets/metadata-image.png', alt: title }],
+	},
+	twitter: {
+		card: 'summary_large_image',
+		site: '@sanjaydevtech',
+		title: title,
+		description: description,
+		creator: '@sanjaydevtech',
+		images: [{ url: '/assets/metadata-image.png', alt: title }],
+	},
 };
 
 export default function RootLayout(props: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<head>
-				<script
-					dangerouslySetInnerHTML={{
-						__html: `window.va = window.va || function () {(window.vaq = window.vaq || []).push(arguments); };`,
-					}}
-				/>
-			</head>
-			<body>
-				<div id="root" className={font.className}>
-					{props.children}
-				</div>
+			<body className={font.className}>
+				{props.children}
 			</body>
 		</html>
 	);

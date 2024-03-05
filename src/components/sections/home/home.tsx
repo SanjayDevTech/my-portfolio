@@ -11,8 +11,8 @@ export default function Home() {
 			}}
 		>
 			<div className="--home-section-profile-name-container">
-				<p className="--home-section-profile-name">Sanjay S</p>
-				<p className="--home-section-profile-headline">Android Developer</p>
+				<h1 className="--home-section-profile-name">Sanjay S</h1>
+				<h2 className="--home-section-profile-headline">Android Developer</h2>
 				<div className="--home-section-profile-contact">
 					<a
 						href='mailto:hello@sanjaydev.tech'
