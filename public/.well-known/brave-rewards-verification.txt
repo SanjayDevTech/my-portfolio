@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: sanjaydev.tech
+Token: 55cffcb00e27c482daeacc39ab733739c879f09a7345067fdb5980472b07277e
