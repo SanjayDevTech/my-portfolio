@@ -22,7 +22,7 @@ export default function Header() {
 						<li
 							key={item.id}
 							onClick={() => {
-								setSection(item.id)
+								setSection(item.id);
 							}}
 							className={clsx('--navbar-item', {
 								'--navbar-item-active': section === item.id,

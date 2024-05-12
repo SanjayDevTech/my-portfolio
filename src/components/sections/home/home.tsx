@@ -15,15 +15,12 @@ export default function Home() {
 				<h2 className="--home-section-profile-headline">Android Developer</h2>
 				<div className="--home-section-profile-contact">
 					<a
-						href='mailto:hello@sanjaydev.tech'
+						href="mailto:hello@sanjaydev.tech"
 						className="--home-section-profile-contact-btn secondary"
 					>
 						Contact me
 					</a>
-					<a
-						href='/blog'
-						className="--home-section-profile-contact-btn primary"
-					>
+					<a href="/blog" className="--home-section-profile-contact-btn primary">
 						<NextJsSvg width={24} height={24} className="--home-section-profile-contact-btn-icon" />
 						My Blog
 					</a>

@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Header from '../components/navbar/header';
+import Navbar from '../components/navbar/navbar';
 import About from '../components/sections/about/about';
 import Home from '../components/sections/home/home';
 import Services from '../components/sections/services';
@@ -8,7 +9,6 @@ import Skills from '../components/sections/skills';
 import Works from '../components/sections/works';
 import GlobalIntersectionObserverContext from '../context/GlobalIntersectionObserverContext';
 import SectionContext from '../context/SectionContext';
-import Navbar from '../components/navbar/navbar';
 
 export default function App() {
 	const [activeSection, setActiveSection] = useState('');

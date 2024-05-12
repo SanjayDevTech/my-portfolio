@@ -1,8 +1,8 @@
-import AboutSvg from "./icons/AboutSvg";
-import HomeSvg from "./icons/HomeSvg";
-import ServicesSvg from "./icons/ServicesSvg";
-import SkillsSvg from "./icons/SkillsSvg";
-import WorksSvg from "./icons/WorksSvg";
+import AboutSvg from './icons/AboutSvg';
+import HomeSvg from './icons/HomeSvg';
+import ServicesSvg from './icons/ServicesSvg';
+import SkillsSvg from './icons/SkillsSvg';
+import WorksSvg from './icons/WorksSvg';
 
 export function sectionToLabel(section: string) {
 	switch (section) {

@@ -5,19 +5,19 @@
 
 	100% {
 		opacity: 0;
-        display: none;
+		display: none;
 	}
 }
 
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
-        display: none;
+		display: none;
 	}
 
 	50% {
 		opacity: 0;
-        display: none;
+		display: none;
 	}
 
 	100% {
@@ -26,12 +26,12 @@
 }
 
 .--anim-fade-in-init {
-    opacity: 0;
-    display: none;
+	opacity: 0;
+	display: none;
 }
 
 .--anim-fade-out-init {
-    opacity: 1;
+	opacity: 1;
 }
 
 .--anim-fade-out {
