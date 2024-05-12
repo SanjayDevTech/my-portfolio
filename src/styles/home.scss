@@ -85,7 +85,7 @@
     object-fit: cover;
     clip-path: circle();
     filter: hue-rotate(30deg);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-out;
     cursor: pointer;
 }
 
@@ -115,16 +115,16 @@
     width: 140px;
     padding: 0 10px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-out;
     margin: 0 5px;
     font-size: var(--font-size-sm);
     font-weight: 500;
 }
 
 .--home-section-profile-contact-btn.secondary {
-    border: 2px solid var(--color-secondary);
+    border: 2px solid var(--color-secondary-dark);
     background-color: transparent;
-    color: var(--color-secondary);
+    color: var(--color-secondary-dark);
 }
 
 .--home-section-profile-contact-btn.primary {
