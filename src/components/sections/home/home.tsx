@@ -1,5 +1,5 @@
-import NextJsSvg from '../../../icons/NextJsSvg';
-import Section from '../../section/section';
+import NextJsSvg from "../../../icons/NextJsSvg";
+import Section from "../../section/section";
 
 export default function Home() {
 	return (
@@ -7,7 +7,7 @@ export default function Home() {
 			id="home"
 			tagline="Glimpse of myself"
 			classNames={{
-				container: '--home-section-container',
+				container: "--home-section-container",
 			}}
 		>
 			<div className="--home-section-profile-name-container">

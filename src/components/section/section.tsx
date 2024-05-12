@@ -1,7 +1,7 @@
-import clsx from 'classnames';
-import { useRef } from 'react';
-import useObserve from '../../hooks/useObserve';
-import useSection from '../../hooks/useSection';
+import clsx from "classnames";
+import { useRef } from "react";
+import useObserve from "../../hooks/useObserve";
+import useSection from "../../hooks/useSection";
 
 export default function Section(props: {
 	id: string;
@@ -18,19 +18,19 @@ export default function Section(props: {
 	return (
 		<section className="--section-container" ref={ref} id={props.id}>
 			<p
-				className={clsx('--section-tagline', {
-					'--anim-fade-out': isCurrentSection,
-					'--anim-fade-out-init': !isCurrentSection,
+				className={clsx("--section-tagline", {
+					"--anim-fade-out": isCurrentSection,
+					"--anim-fade-out-init": !isCurrentSection,
 				})}
 			>
 				{props.tagline}
 			</p>
 			<div
 				className={clsx(
-					'--section-content',
+					"--section-content",
 					{
-						'--anim-fade-in': isCurrentSection,
-						'--anim-fade-in-init': !isCurrentSection,
+						"--anim-fade-in": isCurrentSection,
+						"--anim-fade-in-init": !isCurrentSection,
 					},
 					props.classNames?.container,
 				)}

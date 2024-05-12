@@ -1,17 +1,17 @@
-'use client';
-import { useEffect, useMemo, useRef, useState } from 'react';
-import Header from '../components/navbar/header';
-import Navbar from '../components/navbar/navbar';
-import About from '../components/sections/about/about';
-import Home from '../components/sections/home/home';
-import Services from '../components/sections/services';
-import Skills from '../components/sections/skills';
-import Works from '../components/sections/works';
-import GlobalIntersectionObserverContext from '../context/GlobalIntersectionObserverContext';
-import SectionContext from '../context/SectionContext';
+"use client";
+import { useEffect, useMemo, useRef, useState } from "react";
+import Header from "../components/navbar/header";
+import Navbar from "../components/navbar/navbar";
+import About from "../components/sections/about/about";
+import Home from "../components/sections/home/home";
+import Services from "../components/sections/services";
+import Skills from "../components/sections/skills";
+import Works from "../components/sections/works";
+import GlobalIntersectionObserverContext from "../context/GlobalIntersectionObserverContext";
+import SectionContext from "../context/SectionContext";
 
 export default function App() {
-	const [activeSection, setActiveSection] = useState('');
+	const [activeSection, setActiveSection] = useState("");
 	const mainRef = useRef<HTMLElement>(null);
 	const [observer, setObserver] = useState<IntersectionObserver | null>(null);
 
@@ -32,7 +32,7 @@ export default function App() {
 	useEffect(() => {
 		const options = {
 			root: mainRef.current,
-			rootMargin: '0px',
+			rootMargin: "0px",
 			threshold: [0.75, 1.0],
 		};
 		function callback(entries: IntersectionObserverEntry[]) {

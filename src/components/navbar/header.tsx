@@ -1,7 +1,7 @@
-import clsx from 'classnames';
-import useSection from '../../hooks/useSection';
-import { sectionToLabel } from '../../utils';
-import navItems from './data';
+import clsx from "classnames";
+import useSection from "../../hooks/useSection";
+import { sectionToLabel } from "../../utils";
+import navItems from "./data";
 
 export default function Header() {
 	const [section, setSection] = useSection();
@@ -9,7 +9,7 @@ export default function Header() {
 		<header className="--navbar-header">
 			<p
 				onClick={() => {
-					setSection('home');
+					setSection("home");
 				}}
 				className="--navbar-brand"
 				title="Sanjay S"
@@ -24,8 +24,8 @@ export default function Header() {
 							onClick={() => {
 								setSection(item.id);
 							}}
-							className={clsx('--navbar-item', {
-								'--navbar-item-active': section === item.id,
+							className={clsx("--navbar-item", {
+								"--navbar-item-active": section === item.id,
 							})}
 							title={item.title}
 						>

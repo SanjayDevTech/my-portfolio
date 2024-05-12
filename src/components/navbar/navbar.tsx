@@ -1,7 +1,7 @@
-import clsx from 'classnames';
-import useSection from '../../hooks/useSection';
-import { sectionToIcon, sectionToLabel } from '../../utils';
-import navItems from './data';
+import clsx from "classnames";
+import useSection from "../../hooks/useSection";
+import { sectionToIcon, sectionToLabel } from "../../utils";
+import navItems from "./data";
 
 export default function Navbar() {
 	const [section, setSection] = useSection();
@@ -14,8 +14,8 @@ export default function Navbar() {
 						onClick={() => {
 							setSection(item.id);
 						}}
-						className={clsx('--navbar-item', {
-							'--navbar-item-active': section === item.id,
+						className={clsx("--navbar-item", {
+							"--navbar-item-active": section === item.id,
 						})}
 						title={item.title}
 					>

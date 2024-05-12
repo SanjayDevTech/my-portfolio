@@ -1,47 +1,47 @@
-import EnvelopeSvg from '../../icons/EnvelopeSvg';
-import GitHubSvg from '../../icons/GitHubSvg';
-import LinkedInSvg from '../../icons/LinkedInSvg';
-import NextJsSvg from '../../icons/NextJsSvg';
-import TwitterSvg from '../../icons/TwitterSvg';
-import YouTubeSvg from '../../icons/YouTubeSvg';
+import EnvelopeSvg from "../../icons/EnvelopeSvg";
+import GitHubSvg from "../../icons/GitHubSvg";
+import LinkedInSvg from "../../icons/LinkedInSvg";
+import NextJsSvg from "../../icons/NextJsSvg";
+import TwitterSvg from "../../icons/TwitterSvg";
+import YouTubeSvg from "../../icons/YouTubeSvg";
 
 interface SocialProps {
-	type: 'github' | 'linkedin' | 'twitter' | 'youtube' | 'hashnode' | 'gmail';
+	type: "github" | "linkedin" | "twitter" | "youtube" | "hashnode" | "gmail";
 	href: string;
 	username?: string;
 }
 
-function getProperties(type: SocialProps['type']) {
+function getProperties(type: SocialProps["type"]) {
 	switch (type) {
-		case 'github':
+		case "github":
 			return {
 				icon: <GitHubSvg width={24} height={24} className="--social-link-icon" />,
-				color: 'black',
+				color: "black",
 			};
-		case 'linkedin':
+		case "linkedin":
 			return {
 				icon: <LinkedInSvg width={24} height={24} className="--social-link-icon" />,
-				color: 'blue',
+				color: "blue",
 			};
-		case 'twitter':
+		case "twitter":
 			return {
 				icon: <TwitterSvg width={24} height={24} className="--social-link-icon" />,
-				color: 'black',
+				color: "black",
 			};
-		case 'youtube':
+		case "youtube":
 			return {
 				icon: <YouTubeSvg width={24} height={24} className="--social-link-icon" />,
-				color: 'red',
+				color: "red",
 			};
-		case 'hashnode':
+		case "hashnode":
 			return {
 				icon: <NextJsSvg width={24} height={24} className="--social-link-icon" />,
-				color: 'white',
+				color: "white",
 			};
-		case 'gmail':
+		case "gmail":
 			return {
 				icon: <EnvelopeSvg width={24} height={24} className="--social-link-icon" />,
-				color: 'red-shade',
+				color: "red-shade",
 			};
 	}
 }
@@ -50,7 +50,7 @@ export default function Social(props: SocialProps) {
 	const { icon, color } = getProperties(props.type);
 	return (
 		<a className={`--social-link --social-color-${color}`} href={props.href} target="_blank">
-			{icon}/ {props.username ?? props.href.split('/').pop()}
+			{icon}/ {props.username ?? props.href.split("/").pop()}
 		</a>
 	);
 }

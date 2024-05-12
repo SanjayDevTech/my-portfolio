@@ -1,4 +1,4 @@
-import Section from '../../section/section';
+import Section from "../../section/section";
 
 export default function About() {
 	return (
@@ -6,7 +6,7 @@ export default function About() {
 			id="about"
 			tagline="Learn about me"
 			classNames={{
-				container: '--about-section-container',
+				container: "--about-section-container",
 			}}
 		></Section>
 	);
