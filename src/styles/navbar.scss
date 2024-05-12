@@ -73,14 +73,13 @@
 	font-size: var(--font-size-sm);
 	list-style: none;
 	border-radius: 6px;
-	transition: all .2s ease-out;
+	transition: all 0.2s ease-out;
 }
 
 .--navbar-item-active {
 	color: var(--color-secondary-text);
 	background-color: var(--color-secondary);
 }
-
 
 @media (hover: hover) {
 	.--navbar-item:hover {

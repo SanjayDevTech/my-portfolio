@@ -8,6 +8,8 @@ export default function About() {
 			classNames={{
 				container: "--about-section-container",
 			}}
-		></Section>
+		>
+			<div>This is about me</div>
+		</Section>
 	);
 }

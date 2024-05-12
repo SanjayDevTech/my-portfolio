@@ -1,5 +1,5 @@
 .--section-container {
-    position: relative;
+	position: relative;
 	height: 100vh;
 	background: var(--color-secondary);
 	color: var(--color-secondary-text);
@@ -7,13 +7,13 @@
 }
 
 .--section-tagline {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 20px;
-    font-size: var(--font-size-xxxl);
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	font-size: var(--font-size-xxxl);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -21,7 +21,6 @@
 }
 
 @media screen and (max-width: $max-width-md) {
-	
 	.--section-container {
 		height: calc(100dvh - var(--navbar-height) * 2);
 	}
