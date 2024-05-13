@@ -4,6 +4,14 @@
 	background: var(--color-secondary);
 	color: var(--color-secondary-text);
 	scroll-snap-align: center;
+	padding: 16px;
+	@media screen and (max-width: $max-width-md) {
+		height: calc(100dvh - var(--navbar-height) * 2);
+	}
+	&:nth-child(odd) {
+		background: var(--color-primary);
+		color: var(--color-primary-text);
+	}
 }
 
 .--section-tagline {
@@ -18,18 +26,7 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-}
-
-@media screen and (max-width: $max-width-md) {
-	.--section-container {
-		height: calc(100dvh - var(--navbar-height) * 2);
-	}
-	.--section-tagline {
+	@media screen and (max-width: $max-width-md) {
 		font-size: var(--font-size-xxl);
 	}
-}
-
-.--section-container:nth-child(odd) {
-	background: var(--color-primary);
-	color: var(--color-primary-text);
 }

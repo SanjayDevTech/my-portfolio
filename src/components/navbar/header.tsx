@@ -25,7 +25,7 @@ export default function Header() {
 								setSection(item.id);
 							}}
 							className={clsx("--navbar-item", {
-								"--navbar-item-active": section === item.id,
+								"active": section === item.id,
 							})}
 							title={item.title}
 						>

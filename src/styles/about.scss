@@ -1,103 +1,73 @@
 .--about-section-container {
 	width: 100%;
 	height: 100%;
-	display: flex;
-	flex-direction: row;
-}
-
-.--about-section-half {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	height: 100%;
-}
-
-.--about-section-social-icons {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.--about-section-social-icons > * {
-	margin: 10px;
+	display: grid;
+	grid-template-columns: 70% 1fr;
+	grid-template-rows: 75% 25%;
+	grid-gap: 10px 8px;
+	grid-template-areas:
+		"about pic"
+		"social spotify";
+	@media screen and (max-width: $max-width-md) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 0;
+	}
 }
 
 .--about-section-about {
+	grid-area: about;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 10%;
-	font-size: var(--font-size-lg);
-	text-align: center;
-	height: 100%;
-}
-
-.--about-section-passion {
-	height: 100%;
-	display: flex;
-	justify-content: center;
 	flex-direction: column;
-	align-items: center;
+	text-align: center;
+	justify-content: center;
+	h2 {
+		margin: 32px 0;
+	}
+	@media screen and (max-width: $max-width-md) {
+		:not(h2) {
+			text-align: left;
+		}
+	}
 }
 
-.--about-section-passion > * {
-	font-weight: 500;
+.--about-section-pic {
+	grid-area: pic;
+	width: 100%;
+	height: 100%;
+	@media screen and (max-width: $max-width-md) {
+		display: none;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0.75rem;
+		cursor: pointer;
+		transition: all 0.2s;
+		@media (hover: hover) {
+			filter: grayscale(1);
+			&:hover {
+				filter: grayscale(0);
+			}
+		}
+	}
 }
 
-.--about-section-passion > ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.--about-section-social {
+	grid-area: social;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 12px;
+	row-gap: 8px;
+	align-content: center;
 	justify-content: center;
-	align-items: center;
-	width: 100%;
 }
 
-.--about-section-passion-item {
+.--about-section-spotify {
+	grid-area: spotify;
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	margin: 10px;
-}
-
-.--about-section-passion-name {
-	font-size: var(--font-size-md);
-	font-weight: 500;
-	margin-left: 10px;
-}
-
-.--about-section-position-img {
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
-}
-
-.--about-section-position-container {
-	width: 80px;
-	height: 80px;
-	padding: 10px;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.--about-section-position-container.primary {
-	background-color: var(--color-primary);
-}
-
-.--about-section-position-container.white {
-	background-color: white;
-}
-
-.--about-section-hobbies {
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-
-.--about-section-hobbies > * {
-	font-weight: 500;
 }

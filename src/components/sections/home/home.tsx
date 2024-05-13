@@ -31,6 +31,7 @@ export default function Home() {
 					className="--home-section-profile-picture"
 					src="/assets/sanjay.webp"
 					alt="Sanjay Profile Picture"
+					loading="lazy"
 				/>
 			</div>
 		</Section>

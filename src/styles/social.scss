@@ -9,42 +9,54 @@
 	padding: 0 15px 0 10px;
 	font-size: var(--font-size-sm);
 	border-radius: 40px;
-}
 
-.--social-link:hover {
-	filter: brightness(1.2);
-	box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
-}
+	@media screen and (max-width: $max-width-md) {
+		height: 30px;
+		padding: 0 10px 0 8px;
+		font-size: var(--font-size-xs);
+	}
 
-.--social-link-icon {
-	width: 24px;
-	height: 24px;
-	font-size: 23px;
-	fill: currentColor;
-	margin-right: 4px;
-}
+	@mixin hoverEffect {
+		filter: brightness(1.2);
+		box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.3);
+	}
 
-.--social-color-black {
-	background-color: black;
+	@media (hover: hover) {
+		&:hover {
+			@include hoverEffect;
+		}
+	}
+	@media (hover: none) {
+		&:active {
+			@include hoverEffect;
+		}
+	}
+	svg {
+		width: 24px;
+		height: 24px;
+		font-size: 23px;
+		fill: currentColor;
+		margin-right: 4px;
+		@media screen and (max-width: $max-width-md) {
+			height: 18px;
+			width: 18px;
+			font-size: 17px;
+		}
+	}
+	&.color-black {
+		background-color: black;
 	color: white;
-}
-
-.--social-color-white {
-	background-color: white;
-	color: black;
-}
-
-.--social-color-blue {
-	background-color: #0077b5;
-	color: white;
-}
-
-.--social-color-red {
-	background-color: #d80000;
-	color: white;
-}
-
-.--social-color-red-shade {
-	background-color: #1967d2;
-	color: white;
+	}
+	&.color-white {
+		background-color: white;
+		color: black;
+	}
+	&.color-blue {
+		background-color: #0077b5;
+		color: white;
+	}
+	&.color-red {
+		background-color: #d80000;
+		color: white;
+	}
 }

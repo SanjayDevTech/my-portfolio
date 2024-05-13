@@ -32,7 +32,7 @@ export default function Section(props: {
 						"--anim-fade-in": isCurrentSection,
 						"--anim-fade-in-init": !isCurrentSection,
 					},
-					props.classNames?.container,
+					isCurrentSection && props.classNames?.container,
 				)}
 			>
 				{props.children}
