@@ -1,4 +1,3 @@
-import NextJsSvg from "../../../icons/NextJsSvg";
 import Section from "../../section/section";
 
 export default function Home() {
@@ -20,10 +19,6 @@ export default function Home() {
 					>
 						Contact me
 					</a>
-					<a href="/blog" className="--home-section-profile-contact-btn primary">
-						<NextJsSvg width={24} height={24} className="--home-section-profile-contact-btn-icon" />
-						My Blog
-					</a>
 				</div>
 			</div>
 			<div className="--home-section-profile-picture-container">
@@ -31,7 +26,6 @@ export default function Home() {
 					className="--home-section-profile-picture"
 					src="/assets/sanjay.webp"
 					alt="Sanjay Profile Picture"
-					loading="lazy"
 				/>
 			</div>
 		</Section>

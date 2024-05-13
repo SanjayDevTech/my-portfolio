@@ -15,11 +15,14 @@ export default function About() {
 				<h2>This little part is all about me</h2>
 				<h3>
 					I am Sanjay. A self-taught Android Developer from Tamilnadu.
-					<br /><br />
+					<br />
+					<br />
 					I am currently working as a Software Engineer at Esko Graphics.
-					<br /><br />
+					<br />
+					<br />
 					I love to build apps and websites.
-					<br /><br />
+					<br />
+					<br />
 				</h3>
 			</div>
 			<div className="--about-section-pic">

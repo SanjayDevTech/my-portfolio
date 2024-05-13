@@ -123,24 +123,4 @@
 			}
 		}
 	}
-	&.primary {
-		border: 2px solid white;
-		background-color: transparent;
-		color: var(--color-primary-text);
-
-		@mixin hoverEffect {
-			background-color: white;
-			color: black;
-		}
-		@media (hover: hover) {
-			&:hover {
-				@include hoverEffect;
-			}
-		}
-		@media (hover: none) {
-			&:active {
-				@include hoverEffect;
-			}
-		}
-	}
 }
