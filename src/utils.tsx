@@ -22,14 +22,14 @@ export function sectionToLabel(section: string) {
 export function sectionToIcon(section: string) {
 	switch (section) {
 		case "home":
-			return <HomeSvg width={24} height={24} />;
+			return <HomeSvg />;
 		case "about":
-			return <AboutSvg width={24} height={24} />;
+			return <AboutSvg />;
 		case "works":
-			return <WorksSvg width={24} height={24} />;
+			return <WorksSvg />;
 		case "skills":
-			return <SkillsSvg width={24} height={24} />;
+			return <SkillsSvg />;
 		case "services":
-			return <ServicesSvg width={24} height={24} />;
+			return <ServicesSvg />;
 	}
 }

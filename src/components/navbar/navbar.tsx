@@ -20,7 +20,7 @@ export default function Navbar() {
 						title={item.title}
 					>
 						{sectionToIcon(item.id)}
-						{sectionToLabel(item.id)}
+						<label>{sectionToLabel(item.id)}</label>
 					</li>
 				))}
 			</ul>

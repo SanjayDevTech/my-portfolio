@@ -31,8 +31,9 @@ $max-width-md: 768px;
 
 	@media screen and (max-width: $max-width-md) {
 		--navbar-width: 100%;
-		--navbar-height: 66px;
-		--navbar-brand-font-size: var(--font-size-lg);
+		--navbar-height: 50px;
+		--bottombar-height: 55px;
+		--navbar-brand-font-size: var(--font-size-md);
 	}
 }
 
@@ -65,7 +66,7 @@ main {
 	width: 100%;
 
 	@media screen and (max-width: $max-width-md) {
-		height: calc(100dvh - var(--navbar-height) * 2);
+		height: calc(100dvh - var(--navbar-height) - var(--bottombar-height));
 	}
 }
 
