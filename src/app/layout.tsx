@@ -1,5 +1,6 @@
 import { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
+import Script from "next/script";
 import "../styles/index.scss";
 
 const font = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
@@ -38,6 +39,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<body className={font.className}>{props.children}</body>
+      <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
 		</html>
 	);
 }
