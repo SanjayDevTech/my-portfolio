@@ -39,7 +39,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<body className={font.className}>{props.children}</body>
-      <Script src="https://scripts.simpleanalyticscdn.com/latest.js"  />
+      <Script src="https://godly.sanjaydev.tech/latest.js"  />
 		</html>
 	);
 }
