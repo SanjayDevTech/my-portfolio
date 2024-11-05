@@ -1,8 +1,4 @@
 @import "main.scss";
-@import "anim.scss";
-@import "home.scss";
-@import "about.scss";
-@import "navbar.scss";
-@import "social.scss";
-@import "section.scss";
-@import "error.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

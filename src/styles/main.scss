@@ -45,15 +45,12 @@ body {
 
 body {
 	display: flex;
-	flex-direction: row;
-	@media screen and (max-width: $max-width-md) {
-		flex-direction: column;
-	}
+	flex-direction: column;
 }
 
 html {
 	font-size: 16px;
-	@media screen and (max-width: 1024px) {
+	@media screen and (max-width: $max-width-md) {
 		font-size: 12px;
 	}
 }

@@ -1,3 +1,4 @@
+import classNames, {ArgumentArray} from "classnames";
 import AboutSvg from "./icons/AboutSvg";
 import HomeSvg from "./icons/HomeSvg";
 import ServicesSvg from "./icons/ServicesSvg";
@@ -32,4 +33,12 @@ export function sectionToIcon(section: string) {
 		case "services":
 			return <ServicesSvg />;
 	}
+}
+
+export function cn(...inputs: ArgumentArray) {
+	return classNames(...inputs);
+}
+
+export async function delay(ms: number) {
+	return new Promise((resolve) => setTimeout(resolve, ms));
 }

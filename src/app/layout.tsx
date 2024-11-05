@@ -1,12 +1,31 @@
 import { Metadata, Viewport } from "next";
-import { Poppins } from "next/font/google";
+import localFont from "next/font/local"
 import Script from "next/script";
 import "../styles/index.scss";
+import { cn } from "../utils";
 
-const font = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
+const font = localFont({
+	src: [
+		{
+      path: '../fonts/OttercoDisplay-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+		{
+      path: '../fonts/OttercoDisplay-Medium.otf',
+      weight: '500',
+      style: 'normal',
+    },
+		{
+			path: "../fonts/OttercoDisplay-Bold.otf",
+			weight: "700",
+			style: "normal",
+		},
+	]
+});
 
 export const viewport: Viewport = {
-	themeColor: "#151e3f",
+	themeColor: "#fff",
 };
 
 const title = "Sanjay S | Portfolio";
@@ -38,7 +57,7 @@ export const metadata: Metadata = {
 export default function RootLayout(props: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
-			<body className={font.className}>{props.children}</body>
+			<body className={cn(font.className, "bg-white")}>{props.children}</body>
       <Script src="https://godly.sanjaydev.tech/latest.js"  />
 		</html>
 	);
