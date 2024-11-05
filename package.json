@@ -1,27 +1,27 @@
 {
-	"name": "portfolio",
-	"private": true,
-	"scripts": {
-		"build": "next build",
-		"dev": "next dev",
-		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,scss}\"",
-		"start": "next start"
-	},
-	"dependencies": {
-		"@csstools/normalize.css": "^12.1.1",
-		"classnames": "^2.3.1",
-		"next": "^14.1.1",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
-	},
-	"devDependencies": {
-		"@types/node": "^20.10.7",
-		"@types/react": "^18.2.47",
-		"@types/react-dom": "^18.2.18",
-		"prettier": "^3.0.3",
-		"prettier-plugin-organize-imports": "^3.2.3",
-		"prettier-plugin-packagejson": "^2.4.6",
-		"sass": "^1.71.1",
-		"typescript": "^5.3.3"
-	}
+  "name": "portfolio",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev --turbopack",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,scss}\"",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@csstools/normalize.css": "^12.1.1",
+    "classnames": "^2.3.1",
+    "next": "15.0.2",
+    "react": "19.0.0-rc-02c0e824-20241028",
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.7",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "prettier": "^3.0.3",
+    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier-plugin-packagejson": "^2.4.6",
+    "sass": "^1.71.1",
+    "typescript": "^5.3.3"
+  }
 }
