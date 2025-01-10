@@ -1,35 +1,14 @@
-import AboutSvg from "./icons/AboutSvg";
-import HomeSvg from "./icons/HomeSvg";
-import ServicesSvg from "./icons/ServicesSvg";
-import SkillsSvg from "./icons/SkillsSvg";
-import WorksSvg from "./icons/WorksSvg";
+import classNames, { ArgumentArray } from "classnames";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../tailwind.config";
 
-export function sectionToLabel(section: string) {
-	switch (section) {
-		case "home":
-			return "Home";
-		case "about":
-			return "About";
-		case "works":
-			return "Works";
-		case "skills":
-			return "I Know";
-		case "services":
-			return "I Can";
-	}
+export function cn(...inputs: ArgumentArray) {
+	return classNames(...inputs);
 }
 
-export function sectionToIcon(section: string) {
-	switch (section) {
-		case "home":
-			return <HomeSvg />;
-		case "about":
-			return <AboutSvg />;
-		case "works":
-			return <WorksSvg />;
-		case "skills":
-			return <SkillsSvg />;
-		case "services":
-			return <ServicesSvg />;
-	}
+export async function delay(ms: number) {
+	return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+const fullConfig = resolveConfig(tailwindConfig);
+export const tw = fullConfig.theme;
