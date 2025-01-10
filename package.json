@@ -1,36 +1,36 @@
 {
-  "name": "portfolio",
-  "private": true,
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev --turbopack",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,scss}\"",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@csstools/normalize.css": "^12.1.1",
-    "classnames": "^2.3.1",
-    "framer-motion": "12.0.0-alpha.0",
-    "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "tailwind-merge": "^2.5.4"
-  },
-  "devDependencies": {
-    "@types/node": "^20.10.7",
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
-    "autoprefixer": "^10.4.20",
-    "babel-plugin-react-compiler": "^19.0.0-beta-63b359f-20241101",
-    "eslint-config-next": "^15.0.2",
-    "eslint-plugin-react-compiler": "^19.0.0-beta-63b359f-20241101",
-    "postcss": "^8.4.47",
-    "prettier": "^3.0.3",
-    "prettier-plugin-organize-imports": "^3.2.3",
-    "prettier-plugin-packagejson": "^2.4.6",
-    "sass": "^1.71.1",
-    "tailwindcss": "^3.4.14",
-    "typescript": "^5.3.3"
-  }
+	"name": "portfolio",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev --turbopack",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,json,css,scss}\"",
+		"lint": "next lint",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@csstools/normalize.css": "^12.1.1",
+		"classnames": "^2.5.1",
+		"framer-motion": "^11.16.4",
+		"next": "15.1.4",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"tailwind-merge": "^2.6.0"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.5",
+		"@types/react": "19.0.4",
+		"@types/react-dom": "19.0.2",
+		"autoprefixer": "^10.4.20",
+		"babel-plugin-react-compiler": "^19.0.0-beta-63e3235-20250105",
+		"eslint-config-next": "15.1.4",
+		"eslint-plugin-react-compiler": "^19.0.0-beta-63e3235-20250105",
+		"postcss": "^8.4.49",
+		"prettier": "^3.4.2",
+		"prettier-plugin-organize-imports": "^4.1.0",
+		"prettier-plugin-packagejson": "^2.5.6",
+		"sass": "^1.83.1",
+		"tailwindcss": "^3.4.17",
+		"typescript": "^5.7.3"
+	}
 }

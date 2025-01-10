@@ -1,31 +1,31 @@
 import { Metadata, Viewport } from "next";
-import localFont from "next/font/local"
+import localFont from "next/font/local";
 import Script from "next/script";
 import "../styles/index.scss";
-import { cn } from "../utils";
+import { cn, tw } from "../utils";
 
 const font = localFont({
 	src: [
 		{
-      path: '../fonts/OttercoDisplay-Regular.otf',
-      weight: '400',
-      style: 'normal',
-    },
+			path: "../fonts/Otterco-Regular.otf",
+			weight: "400",
+			style: "normal",
+		},
 		{
-      path: '../fonts/OttercoDisplay-Medium.otf',
-      weight: '500',
-      style: 'normal',
-    },
+			path: "../fonts/Otterco-Medium.otf",
+			weight: "500",
+			style: "normal",
+		},
 		{
-			path: "../fonts/OttercoDisplay-Bold.otf",
+			path: "../fonts/Otterco-Bold.otf",
 			weight: "700",
 			style: "normal",
 		},
-	]
+	],
 });
 
 export const viewport: Viewport = {
-	themeColor: "#fff",
+	themeColor: tw.colors.gray[100],
 };
 
 const title = "Sanjay S | Portfolio";
@@ -58,7 +58,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
 	return (
 		<html lang="en">
 			<body className={cn(font.className, "bg-white")}>{props.children}</body>
-      <Script src="https://godly.sanjaydev.tech/latest.js"  />
+			<Script src="https://godly.sanjaydev.tech/latest.js" />
 		</html>
 	);
 }
